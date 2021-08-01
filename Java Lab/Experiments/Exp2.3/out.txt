@@ -1,0 +1,32 @@
+Hare::	100 m
+Tortoise::	50 m
+Hare::	200 m
+Tortoise::	100 m
+Hare::	300 m
+Tortoise::	150 m
+Hare::	400 m
+Tortoise::	200 m
+Hare::	500 m
+Tortoise::	250 m
+Hare::	600 m
+Tortoise::	300 m
+Hare::	Maybe I should sleep !!!
+Tortoise::	350 m
+Tortoise::	400 m
+Tortoise::	450 m
+Tortoise::	500 m
+Tortoise::	550 m
+Tortoise::	600 m
+Tortoise::	650 m
+Tortoise::	700 m
+Tortoise::	750 m
+Tortoise::	800 m
+Tortoise::	850 m
+Hare::	The tortoise is still afr behind... Let's win this race !!!
+Tortoise::	900 m
+Hare::	700 m
+Tortoise::	950 m
+Hare::	800 m
+Tortoise::	1000 m
+Hare::	900 m
+Tortoise::	I finished!
