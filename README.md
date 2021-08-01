@@ -1,2 +1,2 @@
-# Semester3
+# University
 Scripts I wrote for University
