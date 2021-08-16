@@ -12,5 +12,5 @@
 - [Minor Proj II](Semester5/MinorProjII/Syllabus.md)
 - [Soft Skills](Semester5/Soft_Skills/Syllabus.md)
 - WSN
-  - [Theory](Semester5/Semester5/WSN/Theory/Syllabus.md)
-  - [Practical](Semester5/Semester5/WSN/Practical/Syllabus.md)
+  - [Theory](Semester5/WSN/Theory/Syllabus.md)
+  - [Practical](Semester5/WSN/Practical/Syllabus.md)
