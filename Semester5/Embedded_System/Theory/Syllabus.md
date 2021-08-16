@@ -38,21 +38,23 @@
 
 ### Chapter - 2.2 (Embedded Communication Protocols)
 
-- [ ] Embedded Networking:
-  - [ ] Introduction
-    - [ ] Serial / Parallel Communication
-    - [ ] Serial communication protocols
-  - [ ] RS232 standard
-  - [ ] RS485
-  - [ ] Synchronous Serial Protocols
-  - [ ] Serial Peripheral Interface (SPI)
-  - [ ] Inter Integrated Circuits (I2C)
+#### Embedded Networking
 
-- [ ] Wireless communication:
-  - [ ] WLANs,
-  - [ ] Bluetooth,
-  - [ ] piconet,
-  - [ ] Scatter net
+- [ ] Introduction
+  - [ ] Serial / Parallel Communication
+  - [ ] Serial communication protocols
+- [ ] RS232 standard
+- [ ] RS485
+- [ ] Synchronous Serial Protocols
+- [ ] Serial Peripheral Interface (SPI)
+- [ ] Inter Integrated Circuits (I2C)
+
+#### Wireless communication
+
+- [ ] WLANs
+- [ ] Bluetooth
+- [ ] piconet
+- [ ] Scatter net
 
 ## Unit - 3 (EMBEDDED-SYSTEM DEVELOPMENT & SECURITY )
 

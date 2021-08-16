@@ -1,4 +1,4 @@
-# # WIRELESS SENSOR NETWORKS AND IOT STANDARDS Syllabus ( Credits : 1 )
+# WIRELESS SENSOR NETWORKS AND IOT STANDARDS Syllabus ( Credits : 1 )
 
 ## Unit 1
 

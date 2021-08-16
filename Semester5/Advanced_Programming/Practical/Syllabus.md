@@ -4,7 +4,7 @@
 
 - [ ] WAP in C++ to find the Kth largest element in an array using template and C++STL.
 
-- [ ]  
+-  
   - [ ] A left rotation operation on a vector of size N shifts each of the array's elements 1 unit to the left.
   - [ ] For example, if 2 left rotations are performed on array [1,2,3,4,5], then the array would become[3,4,5,1,3].  
   - [ ] Given an vector of n integers and a number, d , perform d left rotations on the array. Then print the updated array as a single line of space-separated integers.  
