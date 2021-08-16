@@ -1,0 +1,59 @@
+MON : [
+https://cuchd.blackboard.com/ultra/courses/_32027_1/outline
+https://cuchd.blackboard.com/ultra/courses/_30220_1/outline
+https://cuchd.blackboard.com/ultra/courses/_30220_1/outline
+https://cuchd.blackboard.com/ultra/courses/_30232_1/outline
+None
+https://cuchd.blackboard.com/ultra/courses/_32006_1/outline
+https://cuchd.blackboard.com/ultra/courses/_32006_1/outline
+]
+
+TUE : [
+https://cuchd.blackboard.com/ultra/courses/_30228_1/outline
+https://cuchd.blackboard.com/ultra/courses/_32027_1/outline
+https://cuchd.blackboard.com/ultra/courses/_30232_1/outline
+https://cuchd.blackboard.com/ultra/courses/_30230_1/outline
+None
+None
+None
+]
+
+WED : [
+https://cuchd.blackboard.com/ultra/courses/_30623_1/outline
+https://cuchd.blackboard.com/ultra/courses/_31769_1/outline
+https://cuchd.blackboard.com/ultra/courses/_31769_1/outline
+https://cuchd.blackboard.com/ultra/courses/_30228_1/outline
+None
+https://cuchd.blackboard.com/ultra/courses/_32006_1/outline
+https://cuchd.blackboard.com/ultra/courses/_32006_1/outline
+]
+
+THU : [
+None
+https://cuchd.blackboard.com/ultra/courses/_31684_1/outline
+https://cuchd.blackboard.com/ultra/courses/_31684_1/outline
+https://cuchd.blackboard.com/ultra/courses/_30232_1/outline
+None
+https://cuchd.blackboard.com/ultra/courses/_30224_1/outline
+https://cuchd.blackboard.com/ultra/courses/_30224_1/outline
+]
+
+FRI : [
+https://cuchd.blackboard.com/ultra/courses/_30230_1/outline
+https://cuchd.blackboard.com/ultra/courses/_30228_1/outline
+None
+None
+https://cuchd.blackboard.com/ultra/courses/_30234_1/outline
+https://cuchd.blackboard.com/ultra/courses/_30234_1/outline
+https://cuchd.blackboard.com/ultra/courses/_30230_1/outline
+]
+
+SAT : [
+None
+None
+None
+None
+None
+None
+None
+]
