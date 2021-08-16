@@ -1,21 +1,8 @@
-# Advanced Programming Syllabus
+# Advanced Programming Syllabus [ Credits : 3]
 
-## Details
+## UNIT-1
 
-Course Code :: CST-346  
-Course Name :: Advanced Programming  
-Credits :: 3  
-Department :: CSE-APEX  
-Pre-requisite :: C++,
- OOPs  
-
-## Objective
-
-This subject aims to focuses on Advanced concept of C++ and advanced data structure to students. It focuses on advanced level analysis of algorithm and computational mathematics.  
-
-### UNIT-1
-
-#### Chapter-1.1 (Programming Language concepts)
+### Chapter-1.1 (Programming Language concepts)
 
 - [ ] Object oriented Design
 - [ ] Templates
@@ -25,7 +12,7 @@ This subject aims to focuses on Advanced concept of C++ and advanced data struct
 - [ ] Recursion
 - [ ] Bit Manipulation
 
-#### Chapter-1.2 (Basics of Data Structure)
+### Chapter-1.2 (Basics of Data Structure)
 
 - [ ] Arrays
 - [ ] Stacks
@@ -38,15 +25,17 @@ This subject aims to focuses on Advanced concept of C++ and advanced data struct
 - [ ] Balanced Search Trees
 - [ ] Priority Queue
 
-#### Chapter-1.3: (Complexity analysis)
+### Chapter-1.3: (Complexity analysis)
 
 - [ ] Asymptotic analysis (Big-O notation)
 - [ ] Searching
 - [ ] Sorting- External and Internal
 
-### UNIT-2
+</br>
 
-#### Chapter-2.1: (Analysis of Algorithm)
+## UNIT-2
+
+### Chapter-2.1: (Analysis of Algorithm)
 
 - [ ] Graphs - Dijkstra’s Shortest Path
 - [ ] Minimum Spanning Tree
@@ -57,7 +46,7 @@ This subject aims to focuses on Advanced concept of C++ and advanced data struct
 - [ ] Graph Algorithms
 - [ ] Finding connected components and transitive closures
 
-#### Chapter-2.2: (Analysis of Algorithm)
+### Chapter-2.2: (Analysis of Algorithm)
 
 - [ ] Bi-connectivity in undirected graphs
 - [ ] Bridges
@@ -67,7 +56,7 @@ This subject aims to focuses on Advanced concept of C++ and advanced data struct
 - [ ] Euler path
 - [ ] tour/cycle
 
-#### Chapter-2.3: (Dynamic Programming)
+### Chapter-2.3: (Dynamic Programming)
 
 - [ ] Dynamic Programming- overlapping subproblems
 - [ ] Memoization
@@ -76,9 +65,11 @@ This subject aims to focuses on Advanced concept of C++ and advanced data struct
 - [ ] Backtracking
 - [ ] Linear Programming and Reduction
 
-### UNIT-3
+</br>
 
-#### Chapter-3.1 (Advanced Data Structure)
+## UNIT-3
+
+### Chapter-3.1 (Advanced Data Structure)
 
 - [ ] Amortized Analysis
 - [ ] Randomized Algorithms- Quick Sort
@@ -87,7 +78,7 @@ This subject aims to focuses on Advanced concept of C++ and advanced data struct
 - [ ] Lowest Common Ancestor
 - [ ] Tries
 
-#### Chapter-3.2 (Advanced Data Structure)
+### Chapter-3.2 (Advanced Data Structure)
 
 - [ ] Suffix Trees
 - [ ] Disjoint Sets
@@ -98,7 +89,7 @@ This subject aims to focuses on Advanced concept of C++ and advanced data struct
 - [ ] Splay trees
 - [ ] Dynamic trees
 
-#### Chapter-3.3 (Computational Mathematics)
+### Chapter-3.3 (Computational Mathematics)
 
 - [ ] Binary Exponentiation
 - [ ] Computing greatest common divisor
@@ -109,6 +100,9 @@ This subject aims to focuses on Advanced concept of C++ and advanced data struct
 - [ ] Modular inverse
 - [ ] linear congruence equation
 - [ ] Chinese Reminder theorem
+
+</br>
+</br>
 
 ## Reference Books
 
