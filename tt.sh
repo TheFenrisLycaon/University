@@ -49,7 +49,7 @@ do
     fi
 
     c=$(( $d *10 +$l +1))
-    line=$(sed -n "${c}p " ~/work/Uni/4/tt.txt)
+    line=$(sed -n "${c}p " ~/work/Uni/tt.txt)
     link="$(echo $line | sed "s/'//g")"
     link="$(echo $link | sed "s/,//g")"
     #echo $link
