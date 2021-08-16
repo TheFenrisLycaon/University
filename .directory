@@ -1,5 +1,8 @@
 [Dolphin]
 GroupedSorting=true
 SortRole=type
-Timestamp=2021,8,1,10,42,14.168
+Timestamp=2021,8,16,12,32,5.094
 Version=4
+
+[Settings]
+HiddenFilesShown=true
