@@ -1,4 +1,4 @@
-# Advanced Programming Syllabus [ Credits : 3]
+# Advanced Programming Syllabus ( Credits : 3 )
 
 ## UNIT-1
 
@@ -111,11 +111,3 @@
 - “Introduction to Algorithms (Eastern Economy Edition)” by Thomas H Cormen and Charles E Leiserson ISBN-10: 9788120340077 PHI Learning Pvt. Ltd.
 
 - Data Structures Using C and C++ by Aaron M Tenenbaum ISBN-10: 9332549311, Pearson Education India.
-
-## Expectations
-
-- Explain the data structure and OOPS concepts using C++.
-- Apply the shortest path and minimum spanning algorithms in computer networks.
-- Examine the complexity of searching and sorting algorithms, and optimization through arrays, linked structures,stacks,queues,trees,and graphs.
-- Decide and implement an appropriate graph algorithm and hashing function in computer networks for data security.
-- Construct security encryption and decryption algorithms using computational mathematics and graph algorithm.

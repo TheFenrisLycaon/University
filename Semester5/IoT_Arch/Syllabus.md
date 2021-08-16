@@ -1,4 +1,4 @@
-# Aptitude Syllabus
+# IoT Architecture Syllabus
 
 ## UNIT-1
 

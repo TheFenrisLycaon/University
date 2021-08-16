@@ -1,4 +1,4 @@
-# Aptitude Syllabus
+# Soft Skills Syllabus
 
 ## UNIT-1
 

@@ -1,4 +1,4 @@
-# Aptitude Syllabus
+# IoT Design Syllabus
 
 ## UNIT-1
 

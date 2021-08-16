@@ -1,4 +1,4 @@
-# Embedded System Syllabus [ Credits : *toAdd*]
+# Embedded System Syllabus ( Credits : 3 )
 
 ## Unit - 1 (INTRODUCTION TO EMBEDDED SYSTEMS)
 
@@ -13,12 +13,12 @@
 
 ### Chapter - 1.2 (Core of Embedded Systems)
 
-- [ ]Von-Neumann’s architecture
-- [ ]Harvard Architecture
-- [ ]RISC and CISC controllers
-- [ ]Architecture of PIC18F microcontroller
-- [ ]Registers & Memory Organization of PIC18F
-- [ ]Special function registers
+- [ ] Von-Neumann’s architecture
+- [ ] Harvard Architecture
+- [ ] RISC and CISC controllers
+- [ ] Architecture of PIC18F microcontroller
+- [ ] Registers & Memory Organization of PIC18F
+- [ ] Special function registers
 
 ## Unit - 2 ( NETWORKED EMBEDDED SYSTEMS )
 

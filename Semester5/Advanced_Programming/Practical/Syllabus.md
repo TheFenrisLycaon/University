@@ -1,43 +1,43 @@
-# List of Experiments
+# List of Experiments ( Credits : 3 )
 
 ## Unit-1
 
-- WAP in C++ to find the Kth largest element in an array using template and C++STL.
+- [ ] WAP in C++ to find the Kth largest element in an array using template and C++STL.
 
--  
-  - A left rotation operation on a vector of size N shifts each of the array's elements 1 unit to the left.
-  - For example, if 2 left rotations are performed on array [1,2,3,4,5], then the array would become[3,4,5,1,3].  
-  - Given an vector of n integers and a number, d , perform d left rotations on the array. Then print the updated array as a single line of space-separated integers.  
-  - Print a single line of n space-separated integers denoting the final state of the array after performing d left rotations
+- [ ]  
+  - [ ] A left rotation operation on a vector of size N shifts each of the array's elements 1 unit to the left.
+  - [ ] For example, if 2 left rotations are performed on array [1,2,3,4,5], then the array would become[3,4,5,1,3].  
+  - [ ] Given an vector of n integers and a number, d , perform d left rotations on the array. Then print the updated array as a single line of space-separated integers.  
+  - [ ] Print a single line of n space-separated integers denoting the final state of the array after performing d left rotations
 
-- You are given a string containing characters A and B only. Your task is to change it into a string such that there are no matching adjacent characters.  
-  - To do this, you are allowed to delete zero or more characters in the string.  
-  - Your task is to find the minimum number of required deletions.  
-  - For example, given the string s=AABAAB, remove an A at positions 0 and 3 to make s=ABAB in 2 deletions.
+- [ ] You are given a string containing characters A and B only. Your task is to change it into a string such that there are no matching adjacent characters.  
+  - [ ] To do this, you are allowed to delete zero or more characters in the string.  
+  - [ ] Your task is to find the minimum number of required deletions.  
+  - [ ] For example, given the string s=AABAAB, remove an A at positions 0 and 3 to make s=ABAB in 2 deletions.
 
-- Write a program to maintain a elementary database of employees using files.
+- [ ] Write a program to maintain a elementary database of employees using files.
 
 </br>  
 
 ## Unit-2
 
 -
-  - From a given vertex in a weighted connected graph, find shortest paths to other vertices using Dijkstra’s algorithm.  
-  - Compute the transitive closure of a given directed graph using Warshall's algorithm.
+  - [ ] From a given vertex in a weighted connected graph, find shortest paths to other vertices using Dijkstra’s algorithm.  
+  - [ ] Compute the transitive closure of a given directed graph using Warshall's algorithm.
 
-- Obtain the Topological ordering of vertices in a given digraph.
+- [ ] Obtain the Topological ordering of vertices in a given digraph.
 
-- Implement N Queen's problem using Back Tracking.
+- [ ] Implement N Queen's problem using Back Tracking.
 
-- Implement Travelling Salesperson problem using Dynamic programming.
+- [ ] Implement Travelling Salesperson problem using Dynamic programming.
 
 </br>  
 
 ## Unit-3
 
-- Design a quick sort with random pivoting using Lomuto partition scheme.
+- [ ] Design a quick sort with random pivoting using Lomuto partition scheme.
 
-- Demonstrate insert ,delete and search in Treap.
+- [ ] Demonstrate insert ,delete and search in Treap.
 
 </br>  
 </br>  
