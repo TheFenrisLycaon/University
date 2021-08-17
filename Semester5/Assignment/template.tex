@@ -1,0 +1,119 @@
+\documentclass[14pt]{extarticle}
+
+\usepackage[english]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx,eso-pic}
+\usepackage{tgschola}
+\usepackage{listings}
+\usepackage[nodayofweek]{datetime}
+\usepackage[bottom=2.25cm,top=3.75cm,left=1.5cm,right=1.5cm]{geometry}
+
+\fontfamily{qcs}
+\pagenumbering{gobble}
+\lstset { %
+    language=C++,
+    basicstyle=\normalsize,% basic font setting
+}
+
+% Add header and footer images
+\AddToShipoutPictureBG{%
+  \AtPageUpperLeft{%
+    \raisebox{-\height}{%
+    \includegraphics[width=\paperwidth]{private/header.jpeg}}
+  }
+  \AtPageLowerLeft{%
+    \makebox{%
+    \includegraphics[width=\paperwidth]{private/footer.jpeg}}
+  }
+}
+
+% Set title
+\title{%
+    \textbf{
+    \vspace{-3em} \\ 
+    \Large Experiment Number \\
+    \vspace{-4em}
+    }
+}
+
+% Remove author and Date
+\author{}
+\date{}
+
+\begin{document}
+
+\maketitle % Add title of doc
+
+% Add the name and details
+\section*{}
+    \begin{tabular}{ llp{2cm}ll } 
+        Name :: & Rishabh Anand & & UID :: & 19BCS4525  \\ 
+        Branch :: & CSE - IoT & & Sec/Grp :: & 1/A \\ 
+        Semester :: & 5\textsuperscript{th} & & Date :: & \shortdate{\today} \\
+        % Subject :: & Adv Programming Lab & & CODE :: & CSP-347  \\ 
+        % Subject :: & Embedded System Lab & & CODE :: & CSD-333  \\ 
+        % Subject :: & DIOT Lab & & CODE :: & CSD-337  \\ 
+        % Subject :: & WSN Lab & & CODE :: & CSD-331  \\ 
+    \end{tabular}
+    
+\vspace{1em}
+
+\section*{\normalsize 1. Aim :}
+    
+    // Write Aim Here
+
+\section*{\normalsize 2. Task :}
+    
+    // Write Tasks Here
+
+\section*{\normalsize 3. Algorithm :}
+    
+    \begin{enumerate}
+        \item // Add Algorithm here
+    \end{enumerate}
+
+\section*{\normalsize 4. Steps / Source Code :}
+
+    \begin{lstlisting}
+    #include<bits\stdc++.h>
+    
+    int main()
+    {
+        std :: cout << "Hello world !" << std :: endl;
+        return 0;
+    }
+    \end{lstlisting}
+
+\section*{\normalsize 5. Observations :}
+
+\section*{\normalsize 6. Result :}
+
+\vspace{1em}
+
+\section*{\normalsize Learning Outcomes :}
+    
+    \begin{itemize}
+      \item Add learning here
+    \end{itemize}
+
+\vspace{0.5em}
+
+\section*{}
+\begin{center}
+\begin{tabular}{ |p{2.5cm}|p{4cm}|p{5cm}|p{5cm}|} 
+ \hline
+ S. No. & Parameters & Marks Obtained & Maximum Marks \\
+ \hline
+ 1.&&&\\
+ \hline
+ 2.&&&\\
+ \hline
+ 3.&&&\\
+ \hline
+ &&&\\
+ &&&\\
+ \hline
+\end{tabular}
+\end{center}
+
+\end{document}
