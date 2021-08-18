@@ -7,13 +7,23 @@
 \usepackage{listings}
 \usepackage[nodayofweek]{datetime}
 \usepackage[bottom=2.25cm,top=3.75cm,left=1.5cm,right=1.5cm]{geometry}
+\usepackage{xcolor}
 
 \fontfamily{qcs}
 \pagenumbering{gobble}
-\lstset { %
-    language=C++,
-    basicstyle=\normalsize,% basic font setting
+
+\lstdefinestyle{mystyle}{
+    basicstyle=\normalsize,       
+    breaklines=true,                                 
+    keepspaces=true,                                    
+    numbersep=5pt,                  
+    showspaces=false,                
+    showstringspaces=false,
+    showtabs=false,                  
+    tabsize=2
 }
+
+\lstset{style=mystyle}
 
 % Add header and footer images
 \AddToShipoutPictureBG{%
@@ -50,7 +60,7 @@
         Name :: & Rishabh Anand & & UID :: & 19BCS4525  \\ 
         Branch :: & CSE - IoT & & Sec/Grp :: & 1/A \\ 
         Semester :: & 5\textsuperscript{th} & & Date :: & \shortdate{\today} \\
-        % Subject :: & Adv Programming Lab & & CODE :: & CSP-347  \\ 
+        Subject :: & Adv Programming Lab & & CODE :: & CSP-347  \\ 
         % Subject :: & Embedded System Lab & & CODE :: & CSD-333  \\ 
         % Subject :: & DIOT Lab & & CODE :: & CSD-337  \\ 
         % Subject :: & WSN Lab & & CODE :: & CSD-331  \\ 
@@ -60,45 +70,48 @@
 
 \section*{\normalsize 1. Aim :}
     
-    // Write Aim Here
+WAP that uses a function template called maximum to determine the larger of two arguments. Test the program using integer, character and floating-point number arguments.
 
 \section*{\normalsize 2. Task :}
     
-    // Write Tasks Here
+Make a template funtion to compute maximum between two arguments passed to it.
 
 \section*{\normalsize 3. Algorithm :}
     
     \begin{enumerate}
-        \item // Add Algorithm here
+        \item Make a template function
+        \item Compute maximum
+        \item Test function with three data types
+        \begin{enumerate}
+            \item int
+            \item float
+            \item char
+        \end{enumerate}
     \end{enumerate}
 
+% Auto add code and output
 \section*{\normalsize 4. Steps / Source Code :}
 
-    \begin{lstlisting}
-    #include<bits\stdc++.h>
-    
-    int main()
-    {
-        std :: cout << "Hello world !" << std :: endl;
-        return 0;
-    }
-    \end{lstlisting}
+    \lstinputlisting{temp/code.cpp} 
+
+    \vspace{1em}
 
 \section*{\normalsize 5. Observations :}
 
+Following code executes without any error and code duplication.
+
 \section*{\normalsize 6. Result :}
 
-\vspace{1em}
+\includegraphics{temp/output.jpeg}
 
 \section*{\normalsize Learning Outcomes :}
     
     \begin{itemize}
-      \item Add learning here
+      \item C++ templates
+      \item STL library
     \end{itemize}
 
-\vspace{0.5em}
-
-\section*{}
+    \section*{}
 \begin{center}
 \begin{tabular}{ |p{2.5cm}|p{4cm}|p{5cm}|p{5cm}|} 
  \hline
