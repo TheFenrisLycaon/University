@@ -3,155 +3,130 @@
 \usepackage[english]{babel}
 \usepackage[utf8]{inputenc}
 \usepackage{graphicx,eso-pic}
-\usepackage{newtxtext}
-\usepackage{setspace}
-\usepackage{lipsum}
-\usepackage{titlesec}
-\usepackage[bottom=2cm,top=2cm,left=1.5cm,right=1.5cm]{geometry}
+\usepackage{tgschola}
+\usepackage{listings}
+\usepackage[nodayofweek]{datetime}
+\usepackage[bottom=2.25cm,top=3.75cm,left=1.5cm,right=1.5cm]{geometry}
+\usepackage{xcolor}
 
-\makeatletter
+\fontfamily{qcs}
+\pagenumbering{gobble}
 
-\newcommand\frontmatter{
-    \cleardoublepage
-    \pagenumbering{roman}
+\lstdefinestyle{mystyle}{
+    basicstyle=\normalsize,       
+    breaklines=true,                                 
+    keepspaces=true,                                    
+    numbersep=5pt,                  
+    showspaces=false,                
+    showstringspaces=false,
+    showtabs=false,                  
+    tabsize=2
 }
 
-\newcommand\mainmatter{
-    \cleardoublepage
-    \pagenumbering{arabic}
+\lstset{style=mystyle}
+
+% Add header and footer images
+\AddToShipoutPictureBG{%
+  \AtPageUpperLeft{%
+    \raisebox{-\height}{%
+    \includegraphics[width=\paperwidth]{private/header.jpeg}}
+  }
+  \AtPageLowerLeft{%
+    \makebox{%
+    \includegraphics[width=\paperwidth]{private/footer.jpeg}}
+  }
 }
 
-\newcommand\backmatter{
-    \if @openright
-        \cleardoublepage
-    \else
-        \clearpage
-    \fi
+% Set title
+\title{%
+    \textbf{
+    \vspace{-3em} \\ 
+    \Large Experiment Number \\
+    \vspace{-4em}
+    }
 }
 
-\makeatother
-
-\titleformat{\section}[block]{\Large\bfseries\filcenter}{}{1em}{}
-
-
-\title{Python Development}
+% Remove author and Date
 \author{}
 \date{}
 
 \begin{document}
 
-\frontmatter
+\maketitle % Add title of doc
 
-\addcontentsline{toc}{section}{Title}
-\maketitle
+% Add the name and details
+\section*{}
+    \begin{tabular}{ llp{2cm}ll } 
+        Name :: & Rishabh Anand & & UID :: & 19BCS4525  \\ 
+        Branch :: & CSE - IoT & & Sec/Grp :: & 1/A \\ 
+        Semester :: & 5\textsuperscript{th} & & Date :: & \shortdate{\today} \\
+        Subject :: & Adv Programming Lab & & CODE :: & CSP-347  \\ 
+        % Subject :: & Embedded System Lab & & CODE :: & CSD-333  \\ 
+        % Subject :: & DIOT Lab & & CODE :: & CSD-337  \\ 
+        % Subject :: & WSN Lab & & CODE :: & CSD-331  \\ 
+    \end{tabular}
+    
+\vspace{1em}
 
-\vspace{-5em}
+\section*{\normalsize 1. Aim :}
+    
+Implement a class template Gradebook with two nontype template parameters that represent the number of students and the number of tests . Test multiple instances of the GradeBook class template with different numbers of students and exams.
 
+\section*{\normalsize 2. Task :}
+    
+Make a template class to compute two take parameters. And then, test it with different data
+
+\section*{\normalsize 3. Algorithm :}
+    
+    \begin{enumerate}
+        \item Make a template function
+        \item Compute maximum
+        \item Test function with three data types
+        \begin{enumerate}
+            \item int
+            \item float
+            \item char
+        \end{enumerate}
+    \end{enumerate}
+
+% Auto add code and output
+\section*{\normalsize 4. Steps / Source Code :}
+
+    \lstinputlisting{temp/code.cpp} 
+
+    \vspace{1em}
+
+\section*{\normalsize 5. Observations :}
+
+Following code executes without any error and code duplication.
+
+\section*{\normalsize 6. Result :}
+
+\includegraphics{temp/output.jpeg}
+
+\section*{\normalsize Learning Outcomes :}
+    
+    \begin{itemize}
+      \item C++ templates
+      \item STL library
+    \end{itemize}
+
+    \section*{}
 \begin{center}
-    \singlespacing
-
-\textbf {A SUMMER TRAINING REPORT} \\ 
-\emph {Submitted by} \\ 
-\textbf {RISHABH ANAND} \\
-\textbf {19BCS4525 }   \\
-
-\vspace{1cm}
-\onehalfspacing
-\emph {in partial fulfilment  of Summer training for the award of the degree} \\ 
-\emph {of} \\ 
-
-\vspace{1.5cm}
-\singlespacing
-
-BACHELOR OF ENGINEERING \\
-IN \\
-COMPUTER SCIENCE and ENGINEERING\\
-
-\vspace{1cm}
-
-\includegraphics[scale=0.25]{private/seal.png}
-
-\vspace{1cm}
-\singlespacing
-
-APEX INSTITUTE OF TECHNOLOGY\\
-CHANDIGARH UNIVERSITY, GHARUAN\\
-Mohali, Punjab \\
-
-\onehalfspacing
-August, 2021
-
+\begin{tabular}{ |p{2.5cm}|p{4cm}|p{5cm}|p{5cm}|} 
+ \hline
+ S. No. & Parameters & Marks Obtained & Maximum Marks \\
+ \hline
+ 1.&&&\\
+ \hline
+ 2.&&&\\
+ \hline
+ 3.&&&\\
+ \hline
+ &&&\\
+ &&&\\
+ \hline
+\end{tabular}
 \end{center}
-
-\newpage
-\addcontentsline{toc}{section}{Certificate}
-\section*{Certificate}
-\lipsum[10]
-
-\newpage
-\addcontentsline{toc}{section}{Acknowlgement}
-\section*{Acknowlgement}
-\lipsum[10]
-
-\newpage
-\addcontentsline{toc}{section}{List of figures}
-\section*{List of figures}
-\lipsum[10]
-
-\newpage
-\addcontentsline{toc}{section}{List of tables}
-\section*{List of tables}
-\lipsum[10]
-
-\newpage
-\addcontentsline{toc}{section}{List of photographs}
-\section*{List of photographs}
-\lipsum[10]
-
-\newpage
-\addcontentsline{toc}{section}{ABSTRACT}
-\section*{ABSTRACT}
-\lipsum[10]
-
-\newpage
-\addcontentsline{toc}{section}{CONTENTS}
-\begin{center}
-    \tableofcontents
-\end{center}
-
-\mainmatter
-
-\newpage
-\section{INTRODUCTION}
-\lipsum
-
-\newpage
-\section{THEORY}
-\lipsum
-
-\newpage
-\section{METHODOLOGY ADOPTED}
-\lipsum
-
-\newpage
-\section{RESULTS and DISCUSSION}
-\lipsum
-
-\newpage
-\section{CONCLUSIONS}
-\lipsum
-
-\backmatter
-
-\newpage
-\addcontentsline{toc}{section}{REFERENCES}{\protect\thispagestyle{empty}}
-\section*{REFERENCES}
-\lipsum[10]
-
-\newpage
-\addcontentsline{toc}{section}{APPENDIX}
-\section*{APPENDIX}
-\lipsum[10]
-
 
 \end{document}
