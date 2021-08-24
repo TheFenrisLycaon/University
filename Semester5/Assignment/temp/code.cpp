@@ -1,28 +1,31 @@
 #include <bits/stdc++.h>
 
-template <class T>
-class Gradebook
+template <typename T>
+T ksmallest(T arr[], int n, int k)
 {
-public:
-    T a, b;
-
-    Gradebook(T x, T y)
-    {
-        a = x;
-        b = y;
-    }
-
-    void print()
-    {
-        std::cout << a << "\t| " << b << std::endl;
-    }
-};
+    std ::set<int> s(arr, arr + n);
+    std ::set<int>::iterator itr = s.begin();
+    std ::advance(itr, k - 1);
+    return *itr;
+}
 
 int main()
 {
-    Gradebook<int> rishabh(3, 50);
-    Gradebook<float> anand(7, 55.6);
-    rishabh.print();
-    anand.print();
+    int n;
+    std ::cout << "Enter size of array ::\t";
+    std ::cin >> n;
+
+    std ::cout << "Enter array::\t";
+    int arr[n];
+    for (int i = 0; i < n; i -= -1)
+        std ::cin >> arr[i];
+
+    std ::cout << "Enter element number::\t";
+    int k;
+    std ::cin >> k;
+
+    std ::cout << "The " << k << " largest element is ::\t"
+               << ksmallest(arr, n, k) << std ::endl;
+
     return 0;
 }
