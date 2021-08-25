@@ -11,3 +11,5 @@ Semester5/Assignment/images/
 *.log
 *.synctex.gz
 *.main.*
+***/private/*
+Semester5/Minor_Proj/private/*
