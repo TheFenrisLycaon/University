@@ -35,15 +35,15 @@ The data generated, may contain sensitive information about an individual or eve
 
 Looking at this from a developers perspective, we may need data from different sources to fully complete our analysis and give meaningful results. But since we don't have the data at one place, it becomes a really difficult task to use any particular mode of training. Well any mode other than FEDERATED LEARNING. Federated Learning is a very good way to use sensitive data from different parties who are not willing to disclose their exact data. 
 
-In our case, we are using a custom built oximeter to generate data and then analysis the Heart Rate and SPO2 of different individuals and then predict things like who has a higher chance of getting a heart attack and who is running low on SPO2. Now, people may not want to share their heart rate information with general public, so instead they hash theor reading before passing the information. We then aggregate that data onto our process and then, try to predict the desired information and keep the private information private.
+In our case, we are using a custom built oximeter to generate data and then analysis the Heart Rate and SPO2 of different individuals and then predict things like who has a higher chance of getting a heart attack and who is running low on SPO\textsubscript{2}. Now, people may not want to share their heart rate information with general public, so instead they hash their reading before passing the information. We then aggregate that data onto our process and then, predict the desired information and keep the private information private.
 
 \section{Requirements}
 
 \begin{tabular}{ll}
-    MAX30100 \textbackslash 02 \textbackslash 05 & To get Heart Rate and SPO2 information \\
-    ESP32 & To send data online to a server \\
-    Server (Thingspeak \textbackslash{} GC-IoT) & To store, encrypt and share the data \\
-    Colab \textbackslash{} Jupyter & Analysis for Data\\
+    MAX30100 \textbackslash 02 \textbackslash 05 & : To get Heart Rate and SPO2 information \\
+    ESP32 & : To send data online to a server \\
+    Server (Thingspeak \textbackslash{} GC-IoT) & : To store, encrypt and share the data \\
+    Colab \textbackslash{} Jupyter & : Analysis for Data\\
 \end{tabular}
 
 \section*{Student Details}
@@ -53,15 +53,15 @@ In our case, we are using a custom built oximeter to generate data and then anal
     \hline
     \textbf{Student Name} & \textbf{UID} & \textbf{Signature} \\
     \hline
-    \begin{center}Abhishek Gupta\end{center} & \begin{center}19BCS4579\end{center} & \raisebox{-0.5em}{\includegraphics[scale=0.09]{private/aSign.jpeg}} \\
+    \begin{center}Abhishek Gupta\end{center} & \begin{center}19BCS4579\end{center} & \raisebox{-0.5em}{\includegraphics[scale=0.09]{private/gSign.jpeg}} \\
     \hline
-    \begin{center}Khushwant Rathod\end{center} & \begin{center}19BCS4644\end{center} & \raisebox{-1em}{\includegraphics[scale=0.07]{private/kSign.jpeg}}\\
+    \begin{center}Khushwant Rathore\end{center} & \begin{center}19BCS4644\end{center} & \raisebox{-1em}{\includegraphics[scale=0.07]{private/rSign.jpeg}}\\
     \hline
-    \begin{center}Rishabh Anand\end{center} & \begin{center}19BCS4525\end{center} & \raisebox{-1em}{\includegraphics[scale=0.05]{private/rishSign.jpg}} \\
+    \begin{center}Rishabh Anand\end{center} & \begin{center}19BCS4525\end{center} & \raisebox{-1em}{\includegraphics[scale=0.05]{private/aSign.jpg}} \\
     \hline
-    \begin{center}Udita Mitra\end{center} & \begin{center}19BCS4662\end{center} & \raisebox{-1em}{\includegraphics[scale=0.2]{private/uSign.jpeg}} \\
+    \begin{center}Udita Mitra\end{center} & \begin{center}19BCS4662\end{center} & \raisebox{-1em}{\includegraphics[scale=0.2]{private/mSign.jpeg}} \\
     \hline
-    \begin{center}Vandana Chauhan\end{center} & \begin{center}19BCS4532\end{center} & \raisebox{-1em}{\includegraphics[scale=0.15]{private/vSign.png}} \\
+    \begin{center}Vandana Chauhan\end{center} & \begin{center}19BCS4532\end{center} & \raisebox{-1em}{\includegraphics[scale=0.15]{private/cSign.png}} \\
     \hline
 \end{tabular}
 \end{center}
