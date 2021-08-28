@@ -41,7 +41,7 @@
 \title{%
     \textbf{
     \vspace{-3em} \\ 
-    \Large Experiment Number \\
+    \Large Experiment Number 2\\
     \vspace{-4em}
     }
 }
@@ -60,70 +60,82 @@
         Name :: & Rishabh Anand & & UID :: & 19BCS4525  \\ 
         Branch :: & CSE - IoT & & Sec/Grp :: & 1/A \\ 
         Semester :: & 5\textsuperscript{th} & & Date :: & \shortdate{\today} \\
-        Subject :: & Adv Programming Lab & & CODE :: & CSP-347  \\ 
+        % Subject :: & Adv Programming Lab & & CODE :: & CSP-347  \\ 
         % Subject :: & Embedded System Lab & & CODE :: & CSD-333  \\ 
         % Subject :: & DIOT Lab & & CODE :: & CSD-337  \\ 
-        % Subject :: & WSN Lab & & CODE :: & CSD-331  \\ 
+        Subject :: & WSN Lab & & CODE :: & CSD-331  \\ 
     \end{tabular}
     
 \vspace{1em}
 
 \section*{\normalsize 1. Aim :}
     
-Template and STL in C++
+To control 3 colored RGB LED with Arduino Uno.
 
 \section*{\normalsize 2. Task :}
     
 Find the k-th largest element in an unsorted array.
 
-\section*{\normalsize 3. Algorithm :}
+\section*{\normalsize 3. Requirements :}
     
     \begin{enumerate}
-        \item Make a template function
-        \item Parse iterator through the array
-        \item Keep advancing until condition is met.
-        \item Return the desired output.
+      \item Arduino Uno
+      \item Breadboard
+      \item onnecting wires
+      \item RGB LED
+      \item Resistors (230 ohm)
     \end{enumerate}
 
 % Auto add code and output
 \newpage
 \section*{\normalsize 4. Steps / Source Code :}
 
-    \lstinputlisting{temp/code.cpp} 
 
-    \vspace{1em}
+\begin{enumerate}
+  \item Take an Arduino Uno and a breadboard.
+  \item Connect 11,12,13 pin numbers of Arduino board to the connection slots on breadboard and the ground pin to the pin in the negatively charged slot of the breadboard.
+  \item Connect three 230-ohm resistors on the breadboard.
+  \item Connect the RGB LED on the breadboard and then write the code for simulation.
+\end{enumerate}
+
+\lstinputlisting{temp/code.cpp} 
 
 \section*{\normalsize 5. Observations :}
 
-Following code executes without any error and code duplication.
+\includegraphics[scale=.45]{temp/1.png} \\
 
-\section*{\normalsize 6. Result :}
+\includegraphics[scale=.45]{temp/2.png} \\
 
-\includegraphics[wi]{temp/output.jpeg}
+\includegraphics[scale=.45]{temp/3.png} \\
 
-\section*{\normalsize Learning Outcomes :}
+\includegraphics[scale=.45]{temp/4.png} \\
+
+% \section*{\normalsize Learning Outcomes :}
     
-    \begin{itemize}
-      \item C++ templates
-      \item STL library
-    \end{itemize}
+%   \begin{itemize}
+%     \item C++ templates
+%     \item STL library
+%   \end{itemize}
 
-    \section*{}
-\begin{center}
-\begin{tabular}{ |p{2.5cm}|p{4cm}|p{5cm}|p{5cm}|} 
- \hline
- S. No. & Parameters & Marks Obtained & Maximum Marks \\
- \hline
- 1.&&&\\
- \hline
- 2.&&&\\
- \hline
- 3.&&&\\
- \hline
- &&&\\
- &&&\\
- \hline
-\end{tabular}
-\end{center}
+
+% \section*{}
+
+% \begin{center}
+
+% \begin{tabular}{ |p{2.5cm}|p{4cm}|p{5cm}|p{5cm}|} 
+%  \hline
+%  S. No. & Parameters & Marks Obtained & Maximum Marks \\
+%  \hline
+%  1.&&&\\
+%  \hline
+%  2.&&&\\
+%  \hline
+%  3.&&&\\
+%  \hline
+%  &&&\\
+%  &&&\\
+%  \hline
+% \end{tabular}
+% \end{center}
 
 \end{document}
