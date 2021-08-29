@@ -13,3 +13,4 @@ Semester5/Assignment/images/
 *.main.*
 ***/private/*
 Semester5/Minor_Proj/private/*
+.cache
