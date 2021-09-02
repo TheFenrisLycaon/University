@@ -1,7 +1,6 @@
-#include <bits/stdc++.h>
+#include p18f4520.inc
 
-int main()
-{
-    std::cout << "Hello World!";
-    return 0;
-}
+ORG 00
+MOVLW 80H
+MOVWF 30H
+END
