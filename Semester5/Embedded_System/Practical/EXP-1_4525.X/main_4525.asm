@@ -1,0 +1,5 @@
+#include p18f4520.inc
+ORG 00
+MOVLW 80H
+MOVWF 30H
+END

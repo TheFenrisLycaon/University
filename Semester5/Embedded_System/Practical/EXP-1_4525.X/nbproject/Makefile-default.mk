@@ -30,12 +30,12 @@ ifeq ($(TYPE_IMAGE), DEBUG_RUN)
 IMAGE_TYPE=debug
 OUTPUT_SUFFIX=cof
 DEBUGGABLE_SUFFIX=cof
-FINAL_IMAGE=dist/${CND_CONF}/${IMAGE_TYPE}/Exp1.1_4525.X.${IMAGE_TYPE}.${OUTPUT_SUFFIX}
+FINAL_IMAGE=dist/${CND_CONF}/${IMAGE_TYPE}/EXP-1_4525.X.${IMAGE_TYPE}.${OUTPUT_SUFFIX}
 else
 IMAGE_TYPE=production
 OUTPUT_SUFFIX=hex
 DEBUGGABLE_SUFFIX=cof
-FINAL_IMAGE=dist/${CND_CONF}/${IMAGE_TYPE}/Exp1.1_4525.X.${IMAGE_TYPE}.${OUTPUT_SUFFIX}
+FINAL_IMAGE=dist/${CND_CONF}/${IMAGE_TYPE}/EXP-1_4525.X.${IMAGE_TYPE}.${OUTPUT_SUFFIX}
 endif
 
 ifeq ($(COMPARE_BUILD), true)
@@ -57,17 +57,17 @@ OBJECTDIR=build/${CND_CONF}/${IMAGE_TYPE}
 DISTDIR=dist/${CND_CONF}/${IMAGE_TYPE}
 
 # Source Files Quoted if spaced
-SOURCEFILES_QUOTED_IF_SPACED=
+SOURCEFILES_QUOTED_IF_SPACED=main_4525.asm
 
 # Object Files Quoted if spaced
-OBJECTFILES_QUOTED_IF_SPACED=
-POSSIBLE_DEPFILES=
+OBJECTFILES_QUOTED_IF_SPACED=${OBJECTDIR}/main_4525.o
+POSSIBLE_DEPFILES=${OBJECTDIR}/main_4525.o.d
 
 # Object Files
-OBJECTFILES=
+OBJECTFILES=${OBJECTDIR}/main_4525.o
 
 # Source Files
-SOURCEFILES=
+SOURCEFILES=main_4525.asm
 
 
 
@@ -88,15 +88,31 @@ FIXDEPS=fixDeps
 ifneq ($(INFORMATION_MESSAGE), )
 	@echo $(INFORMATION_MESSAGE)
 endif
-	${MAKE}  -f nbproject/Makefile-default.mk dist/${CND_CONF}/${IMAGE_TYPE}/Exp1.1_4525.X.${IMAGE_TYPE}.${OUTPUT_SUFFIX}
+	${MAKE}  -f nbproject/Makefile-default.mk dist/${CND_CONF}/${IMAGE_TYPE}/EXP-1_4525.X.${IMAGE_TYPE}.${OUTPUT_SUFFIX}
 
-MP_PROCESSOR_OPTION=18F4550
-MP_PROCESSOR_OPTION_LD=18f4550
+MP_PROCESSOR_OPTION=18F4520
+MP_PROCESSOR_OPTION_LD=18f4520
 MP_LINKER_DEBUG_OPTION=  -u_DEBUGSTACK
 # ------------------------------------------------------------------------------------
 # Rules for buildStep: assemble
 ifeq ($(TYPE_IMAGE), DEBUG_RUN)
+${OBJECTDIR}/main_4525.o: main_4525.asm  nbproject/Makefile-${CND_CONF}.mk 
+	@${MKDIR} "${OBJECTDIR}" 
+	@${RM} ${OBJECTDIR}/main_4525.o.d 
+	@${RM} ${OBJECTDIR}/main_4525.o 
+	@${FIXDEPS} dummy.d -e "${OBJECTDIR}/main_4525.err" $(SILENT) -c ${MP_AS} $(MP_EXTRA_AS_PRE) -d__DEBUG -d__MPLAB_DEBUGGER_SIMULATOR=1 -q -p$(MP_PROCESSOR_OPTION) -u  -l\\\"${OBJECTDIR}/main_4525.lst\\\" -e\\\"${OBJECTDIR}/main_4525.err\\\" $(ASM_OPTIONS)  -o\\\"${OBJECTDIR}/main_4525.o\\\" \\\"main_4525.asm\\\"
+	@${DEP_GEN} -d "${OBJECTDIR}/main_4525.o"
+	@${FIXDEPS} "${OBJECTDIR}/main_4525.o.d" $(SILENT) -rsi ${MP_CC_DIR}../ -c18 
+	
 else
+${OBJECTDIR}/main_4525.o: main_4525.asm  nbproject/Makefile-${CND_CONF}.mk 
+	@${MKDIR} "${OBJECTDIR}" 
+	@${RM} ${OBJECTDIR}/main_4525.o.d 
+	@${RM} ${OBJECTDIR}/main_4525.o 
+	@${FIXDEPS} dummy.d -e "${OBJECTDIR}/main_4525.err" $(SILENT) -c ${MP_AS} $(MP_EXTRA_AS_PRE) -q -p$(MP_PROCESSOR_OPTION) -u  -l\\\"${OBJECTDIR}/main_4525.lst\\\" -e\\\"${OBJECTDIR}/main_4525.err\\\" $(ASM_OPTIONS)  -o\\\"${OBJECTDIR}/main_4525.o\\\" \\\"main_4525.asm\\\"
+	@${DEP_GEN} -d "${OBJECTDIR}/main_4525.o"
+	@${FIXDEPS} "${OBJECTDIR}/main_4525.o.d" $(SILENT) -rsi ${MP_CC_DIR}../ -c18 
+	
 endif
 
 # ------------------------------------------------------------------------------------
@@ -108,13 +124,13 @@ endif
 # ------------------------------------------------------------------------------------
 # Rules for buildStep: link
 ifeq ($(TYPE_IMAGE), DEBUG_RUN)
-dist/${CND_CONF}/${IMAGE_TYPE}/Exp1.1_4525.X.${IMAGE_TYPE}.${OUTPUT_SUFFIX}: ${OBJECTFILES}  nbproject/Makefile-${CND_CONF}.mk    
+dist/${CND_CONF}/${IMAGE_TYPE}/EXP-1_4525.X.${IMAGE_TYPE}.${OUTPUT_SUFFIX}: ${OBJECTFILES}  nbproject/Makefile-${CND_CONF}.mk    
 	@${MKDIR} dist/${CND_CONF}/${IMAGE_TYPE} 
-	${MP_LD} $(MP_EXTRA_LD_PRE)   -p$(MP_PROCESSOR_OPTION_LD)  -w -x -u_DEBUG -m"${DISTDIR}/${PROJECTNAME}.${IMAGE_TYPE}.map"  -z__MPLAB_BUILD=1  -z__MPLAB_DEBUG=1 -z__MPLAB_DEBUGGER_SIMULATOR=1 $(MP_LINKER_DEBUG_OPTION) -l ${MP_CC_DIR}/../lib  -o dist/${CND_CONF}/${IMAGE_TYPE}/Exp1.1_4525.X.${IMAGE_TYPE}.${OUTPUT_SUFFIX}  ${OBJECTFILES_QUOTED_IF_SPACED}   
+	${MP_LD} $(MP_EXTRA_LD_PRE)   -p$(MP_PROCESSOR_OPTION_LD)  -w -x -u_DEBUG -m"${DISTDIR}/${PROJECTNAME}.${IMAGE_TYPE}.map"  -z__MPLAB_BUILD=1  -z__MPLAB_DEBUG=1 -z__MPLAB_DEBUGGER_SIMULATOR=1 $(MP_LINKER_DEBUG_OPTION) -l ${MP_CC_DIR}/../lib  -o dist/${CND_CONF}/${IMAGE_TYPE}/EXP-1_4525.X.${IMAGE_TYPE}.${OUTPUT_SUFFIX}  ${OBJECTFILES_QUOTED_IF_SPACED}   
 else
-dist/${CND_CONF}/${IMAGE_TYPE}/Exp1.1_4525.X.${IMAGE_TYPE}.${OUTPUT_SUFFIX}: ${OBJECTFILES}  nbproject/Makefile-${CND_CONF}.mk   
+dist/${CND_CONF}/${IMAGE_TYPE}/EXP-1_4525.X.${IMAGE_TYPE}.${OUTPUT_SUFFIX}: ${OBJECTFILES}  nbproject/Makefile-${CND_CONF}.mk   
 	@${MKDIR} dist/${CND_CONF}/${IMAGE_TYPE} 
-	${MP_LD} $(MP_EXTRA_LD_PRE)   -p$(MP_PROCESSOR_OPTION_LD)  -w  -m"${DISTDIR}/${PROJECTNAME}.${IMAGE_TYPE}.map"  -z__MPLAB_BUILD=1  -l ${MP_CC_DIR}/../lib  -o dist/${CND_CONF}/${IMAGE_TYPE}/Exp1.1_4525.X.${IMAGE_TYPE}.${DEBUGGABLE_SUFFIX}  ${OBJECTFILES_QUOTED_IF_SPACED}   
+	${MP_LD} $(MP_EXTRA_LD_PRE)   -p$(MP_PROCESSOR_OPTION_LD)  -w  -m"${DISTDIR}/${PROJECTNAME}.${IMAGE_TYPE}.map"  -z__MPLAB_BUILD=1  -l ${MP_CC_DIR}/../lib  -o dist/${CND_CONF}/${IMAGE_TYPE}/EXP-1_4525.X.${IMAGE_TYPE}.${DEBUGGABLE_SUFFIX}  ${OBJECTFILES_QUOTED_IF_SPACED}   
 endif
 
 

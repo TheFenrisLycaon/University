@@ -1,0 +1,4 @@
+Warning[205] /home/fenris/work/dead/University/Semester5/Embedded_System/Practical/EXP-1_4525.X/main_4525.asm 2 : Found directive in column 1. (ORG)
+Warning[203] /home/fenris/work/dead/University/Semester5/Embedded_System/Practical/EXP-1_4525.X/main_4525.asm 3 : Found opcode in column 1. (MOVLW)
+Warning[203] /home/fenris/work/dead/University/Semester5/Embedded_System/Practical/EXP-1_4525.X/main_4525.asm 4 : Found opcode in column 1. (MOVWF)
+Warning[205] /home/fenris/work/dead/University/Semester5/Embedded_System/Practical/EXP-1_4525.X/main_4525.asm 5 : Found directive in column 1. (END)
