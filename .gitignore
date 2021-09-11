@@ -3,11 +3,9 @@
 **/*.out
 **/*.class
 **/*.aux
-
 **/*.fls
 **/*.fdb_latexmk
 Semester5/Assignment/images/
-*.pdf
 *.log
 *.synctex.gz
 *.main.*

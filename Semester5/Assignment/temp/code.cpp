@@ -1,6 +1,28 @@
-#include p18f4520.inc
+const int potPin = A0;
+const int ledPin = 11;
+int potValue = 0;
+int ledValue;
 
-ORG 00
-MOVLW 80H
-MOVWF 30H
-END
+void setup() {
+    pinMode(potPin, INPUT);
+    pinMode(ledPin, OUTPUT);
+    Serial.begin(9600);
+}
+
+void loop() {
+    if (analogRead(potPin) != potValue) {
+
+        Serial.println("Value changed");
+        delay(500);
+
+        potValue = analogRead(potPin);
+        ledValue = map(potValue, 0, 1023, 0, 255);
+        Serial.println(potValue);
+        Serial.println(ledValue);
+        Serial.println("");
+        analogWrite(ledPin, ledValue);
+        Serial.print("LED Value = ");
+        Serial.println(ledValue);
+        Serial.println("");
+    }
+}
