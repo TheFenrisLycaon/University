@@ -14,14 +14,14 @@
 \pagenumbering{gobble}
 
 \lstdefinestyle{mystyle}{
-    basicstyle=\normalsize,       
+    basicstyle=\small,       
     breaklines=true,                                 
-    keepspaces=true,                                    
-    numbersep=5pt,                  
+    keepspaces=false,                                    
+    numbersep=3pt,                  
     showspaces=false,                
     showstringspaces=false,
     showtabs=false,                  
-    tabsize=2
+    tabsize=1
 }
 
 \lstset{style=mystyle}
@@ -42,7 +42,7 @@
 \title{%
     \textbf{
     \vspace{-3em} \\ 
-    \Large Experiment Number 2\\
+    \Large Experiment Number 4\\
     \vspace{-4em}
     }
 }
@@ -61,8 +61,8 @@
         Name :: & Rishabh Anand & & UID :: & 19BCS4525  \\ 
         Branch :: & CSE - IoT & & Sec/Grp :: & 1/A \\ 
         Semester :: & 5\textsuperscript{th} & & Date :: & \shortdate{\today} \\
-        % Subject :: & Adv Programming Lab & & CODE :: & CSP-347  \\ 
-        Subject :: & Embedded System Lab & & CODE :: & CSD-333  \\ 
+        Subject :: & Adv Programming Lab & & CODE :: & CSP-347  \\ 
+        % Subject :: & Embedded System Lab & & CODE :: & CSD-333  \\ 
         % Subject :: & DIOT Lab & & CODE :: & CSD-337  \\ 
         % Subject :: & WSN Lab & & CODE :: & CSD-331  \\ 
     \end{tabular}
@@ -71,15 +71,13 @@
 
 \section*{\normalsize 1. Aim :}
 
-Linked List Operations.
+Write a C++ program to read the a emp.dat file. Create new files such as Adm.dat, Sal.dat, Pro.dat, IT.dat respectively to store the employee details according to their department.
 
 \section*{\normalsize 2. Task :}
 
 \begin{enumerate}
-  \item Reverse a Linked List
-  \item Find Loop in a linked List
-  \item Merge two Sorted Linked list
-  \item Add using linked list.
+  \item Write a C++ program to read the a emp.dat file. 
+  \item Create new files such as Adm.dat, Sal.dat, Pro.dat, IT.dat respectively to store the employee details according to their department.
 \end{enumerate}
 
 % \section*{\normalsize 3. Theory :}
@@ -88,39 +86,35 @@ Linked List Operations.
 %   \item 
 % \end{enumerate}
 
-% \section*{\normalsize 3. Algorithm :}
+\section*{\normalsize 3. Algorithm :}
 
-%    \begin{enumerate}
-%     \item 
-%    \end{enumerate}
+\begin{enumerate}
+  \item Read emp.dat file for current entries
+  \item Take a number of entries
+  \item Enter them in respective files.
+  \item Save files.
+  \item Exit
+\end{enumerate}
+
 
 % Auto add code and output
 \newpage
-\section*{\normalsize 4. Steps / Source Code :}
-
-\begin{itemize}
-  \item Reverse
-\end{itemo\ize}
+\section*{\normalsize 4. Source Code :}
 
 \lstinputlisting{temp/code.cpp} 
 
+\newpage
+\section*{\normalsize 5. Observations :}
 
-\begin{itemize}
-  \item Loop
-\end{itemize}
-
-\lstinputlisting{temp/code.cpp} 
-
-% \section*{\normalsize 5. Observations :}
-
-% \begin{center}
-
-% \end{center}
+\begin{center}
+\includegraphics[scale=1.15]{temp/output.jpeg}
+\end{center}
 
 \section*{\normalsize Learning Outcomes :}
   
   \begin{itemize}
-    \item 
+    \item File I/O
+    \item ofss
   \end{itemize}
 
 \section*{}
