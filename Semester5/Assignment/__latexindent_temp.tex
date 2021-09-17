@@ -6,6 +6,8 @@
 \usepackage{tgschola}
 \usepackage{listings}
 \usepackage{pdfpages}
+\usepackage{noindentafter}
+\usepackage{indentfirst}
 \usepackage[nodayofweek]{datetime}
 \usepackage[bottom=2.25cm,top=3.75cm,left=1.5cm,right=1.5cm]{geometry}
 \usepackage{xcolor}
@@ -42,7 +44,7 @@
 \title{%
     \textbf{
     \vspace{-3em} \\ 
-    \Large Experiment Number\\
+    \Large Experiment Number 3\\
     \vspace{-4em}
     }
 }
@@ -58,52 +60,67 @@
 % Add the name and details
 \section*{}
     \begin{tabular}{ llp{2cm}ll } 
-        Name :: & Rishabh Anand & & UID :: & 19BCS4525  \\ 
+        Name :: & Udita Mitra & & UID :: & 19BCS4662 \\ 
         Branch :: & CSE - IoT & & Sec/Grp :: & 1/A \\ 
         Semester :: & 5\textsuperscript{th} & & Date :: & \shortdate{\today} \\
         % Subject :: & Adv Programming Lab & & CODE :: & CSP-347  \\ 
         % Subject :: & Embedded System Lab & & CODE :: & CSD-333  \\ 
         % Subject :: & DIOT Lab & & CODE :: & CSD-337  \\ 
-        % Subject :: & WSN Lab & & CODE :: & CSD-331  \\ 
+        Subject :: & WSN Lab & & CODE :: & CSD-331  \\ 
     \end{tabular}
     
 \vspace{1em}
 
 \section*{\normalsize 1. Aim :}
 
-Fill
+Understanding the working of ESP8266 WiFi module and its uses.
 
-\section*{\normalsize 2. Task :}
-
-\begin{enumerate}
-  \item Set 
-\end{enumerate}
-
-% \section*{\normalsize 3A. Theory :}
-
-\section*{\normalsize 3. Algorithm :}
+\section*{\normalsize 2. Requiremnets :}
 
 \begin{itemize}
-  \item Do
+  \item TinkerCAD
+  \item Arduino Uno
+  \item Resistor
 \end{itemize}
+
+\section*{\normalsize 3. Theory :}
+
+ESP8266 is Wi-Fi enabled system on chip (SoC) module developed by Espressif system. It is mostly used for the development of the Internet of Things (IoT) embedded applications. 
+
+The ESP8266 is a low-cost Wi-Fi microchip with full TCP/IP stack and microcontroller capability produced by Shanghai-based Chinese manufacturing company Espressif Systems. 
+
+The ESP8266 is capable of either hosting an application or offloading all the Wi-Fi networking functions from another application processor. 
+
+Each ESP8266 Wi-Fi module comes pre-programmed with an AT command set firmware, now you can simply hook this up to your Arduino device and get as much Wi-Fi ability as a Wi-Fi Shield offers. 
+
+% \section*{\normalsize 3. Algorithm :}
+
+% \begin{itemize}
+%   \item Do
+% \end{itemize}
 
 % Auto add code and output
 \newpage
 \section*{\normalsize 4. Source Code :}
 
+\includegraphics[width=0.95\textwidth]{temp/circuit.png}
+\newpage
 \lstinputlisting{temp/code.cpp}
 
 % \newpage
-% \section*{\normalsize 5. Observations :}
+\section*{\normalsize 5. Observations :}
 
-% \begin{center}
-%   \includegraphics[width=\textwidth]{temp/3.jpeg}
-% \end{center}
+\begin{center}
+  \includegraphics[width=0.75\textwidth]{temp/output.jpeg}
+\end{center}
 
 \section*{\normalsize Learning Outcomes :}
   
   \begin{itemize}
-    \item Wow
+    \item ESP8266
+    \item Arduino Uno
+    \item TinkerCAD
+    \item ThingSpeak
   \end{itemize}
 
 \section*{}
