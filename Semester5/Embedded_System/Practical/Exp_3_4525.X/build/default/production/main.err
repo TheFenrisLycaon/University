@@ -1,0 +1,5 @@
+Warning[205] /home/fenris/work/dead/University/Semester5/Embedded_System/Practical/Exp_3_4525.X/main.asm 3 : Found directive in column 1. (org)
+Warning[203] /home/fenris/work/dead/University/Semester5/Embedded_System/Practical/Exp_3_4525.X/main.asm 4 : Found opcode in column 1. (MOVLW)
+Warning[203] /home/fenris/work/dead/University/Semester5/Embedded_System/Practical/Exp_3_4525.X/main.asm 5 : Found opcode in column 1. (ADDLW)
+Error[113]   /home/fenris/work/dead/University/Semester5/Embedded_System/Practical/Exp_3_4525.X/main.asm 5 : Symbol not previously defined (FFH)
+Warning[205] /home/fenris/work/dead/University/Semester5/Embedded_System/Practical/Exp_3_4525.X/main.asm 6 : Found directive in column 1. (END)
