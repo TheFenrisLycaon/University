@@ -1,9 +1,10 @@
 #include p18f4520.inc
-    ORG 00
-    MOVLW 99H
-    ADDLW 01H
-    ADDLW 66H
-    ADDLW 89H
-    ADDLW 97H
-    ADDLW 35H 
+    org 00
+    MOVLW 81H
+    MOVWF 20H
+    MOVFF 20H, 21H
+    MOVFF 20H, 22H
+    MOVFF 20H, 23H
+    MOVFF 20H, 24H
+    COMF 24H
     END

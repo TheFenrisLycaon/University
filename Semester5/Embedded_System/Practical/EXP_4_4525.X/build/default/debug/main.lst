@@ -1,4 +1,4 @@
-MPASM 5.54  /HOME/FENRIS/WORK/DEAD/UNIVERSIT   10-7-2021  15:12:31         PAGE  1
+MPASM 5.54  /HOME/FENRIS/WORK/DEAD/UNIVERSIT   10-14-2021  20:50:23         PAGE  1
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -14,15 +14,16 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
                       00007 ;==========================================================================
                       00008 
                       01488         LIST
-                      00002     ORG 00
-000000 0E99           00003     MOVLW 99H
-000002 0F01           00004     ADDLW 01H
-000004 0F66           00005     ADDLW 66H
-000006 0F89           00006     ADDLW 89H
-000008 0F97           00007     ADDLW 97H
-00000A 0F35           00008     ADDLW 35H 
-                      00009     END
-MPASM 5.54  /HOME/FENRIS/WORK/DEAD/UNIVERSIT   10-7-2021  15:12:31         PAGE  2
+                      00002     org 00
+000000 0E81           00003     MOVLW 81H
+000002 6E20           00004     MOVWF 20H
+000004 C020 F021      00005     MOVFF 20H, 21H
+000008 C020 F022      00006     MOVFF 20H, 22H
+00000C C020 F023      00007     MOVFF 20H, 23H
+000010 C020 F024      00008     MOVFF 20H, 24H
+000014 1E24           00009     COMF 24H
+                      00010     END
+MPASM 5.54  /HOME/FENRIS/WORK/DEAD/UNIVERSIT   10-14-2021  20:50:23         PAGE  2
 
 
 SYMBOL TABLE
@@ -81,7 +82,7 @@ BCLIP                             00000003
 BF                                00000000
 BGST                              00000005
 BOR                               00000000
-MPASM 5.54  /HOME/FENRIS/WORK/DEAD/UNIVERSIT   10-7-2021  15:12:31         PAGE  3
+MPASM 5.54  /HOME/FENRIS/WORK/DEAD/UNIVERSIT   10-14-2021  20:50:23         PAGE  3
 
 
 SYMBOL TABLE
@@ -140,7 +141,7 @@ CLKO                              00000006
 CM0                               00000000
 CM1                               00000001
 CM2                               00000002
-MPASM 5.54  /HOME/FENRIS/WORK/DEAD/UNIVERSIT   10-7-2021  15:12:31         PAGE  4
+MPASM 5.54  /HOME/FENRIS/WORK/DEAD/UNIVERSIT   10-14-2021  20:50:23         PAGE  4
 
 
 SYMBOL TABLE
@@ -199,7 +200,7 @@ FLTS                              00000002
 FREE                              00000004
 FSR0                              00000000
 FSR0H                             00000FEA
-MPASM 5.54  /HOME/FENRIS/WORK/DEAD/UNIVERSIT   10-7-2021  15:12:31         PAGE  5
+MPASM 5.54  /HOME/FENRIS/WORK/DEAD/UNIVERSIT   10-14-2021  20:50:23         PAGE  5
 
 
 SYMBOL TABLE
@@ -258,7 +259,7 @@ INT2P                             00000007
 INTCON                            00000FF2
 INTCON2                           00000FF1
 INTCON3                           00000FF0
-MPASM 5.54  /HOME/FENRIS/WORK/DEAD/UNIVERSIT   10-7-2021  15:12:31         PAGE  6
+MPASM 5.54  /HOME/FENRIS/WORK/DEAD/UNIVERSIT   10-14-2021  20:50:23         PAGE  6
 
 
 SYMBOL TABLE
@@ -317,7 +318,7 @@ LATD4                             00000004
 LATD5                             00000005
 LATD6                             00000006
 LATD7                             00000007
-MPASM 5.54  /HOME/FENRIS/WORK/DEAD/UNIVERSIT   10-7-2021  15:12:31         PAGE  7
+MPASM 5.54  /HOME/FENRIS/WORK/DEAD/UNIVERSIT   10-14-2021  20:50:23         PAGE  7
 
 
 SYMBOL TABLE
@@ -376,7 +377,7 @@ P                                 00000004
 P1A                               00000002
 P1B                               00000005
 P1C                               00000006
-MPASM 5.54  /HOME/FENRIS/WORK/DEAD/UNIVERSIT   10-7-2021  15:12:31         PAGE  8
+MPASM 5.54  /HOME/FENRIS/WORK/DEAD/UNIVERSIT   10-14-2021  20:50:23         PAGE  8
 
 
 SYMBOL TABLE
@@ -435,7 +436,7 @@ PROD                              00000FF3
 PRODH                             00000FF4
 PRODL                             00000FF3
 PRSEN                             00000007
-MPASM 5.54  /HOME/FENRIS/WORK/DEAD/UNIVERSIT   10-7-2021  15:12:31         PAGE  9
+MPASM 5.54  /HOME/FENRIS/WORK/DEAD/UNIVERSIT   10-14-2021  20:50:23         PAGE  9
 
 
 SYMBOL TABLE
@@ -494,7 +495,7 @@ RCIE                              00000005
 RCIF                              00000005
 RCIP                              00000005
 RCMT                              00000006
-MPASM 5.54  /HOME/FENRIS/WORK/DEAD/UNIVERSIT   10-7-2021  15:12:31         PAGE 10
+MPASM 5.54  /HOME/FENRIS/WORK/DEAD/UNIVERSIT   10-14-2021  20:50:23         PAGE 10
 
 
 SYMBOL TABLE
@@ -553,7 +554,7 @@ SSPBUF                            00000FC9
 SSPCON1                           00000FC6
 SSPCON2                           00000FC5
 SSPEN                             00000005
-MPASM 5.54  /HOME/FENRIS/WORK/DEAD/UNIVERSIT   10-7-2021  15:12:31         PAGE 11
+MPASM 5.54  /HOME/FENRIS/WORK/DEAD/UNIVERSIT   10-14-2021  20:50:23         PAGE 11
 
 
 SYMBOL TABLE
@@ -612,7 +613,7 @@ T3CKPS1                           00000005
 T3CON                             00000FB1
 T3SYNC                            00000002
 TABLAT                            00000FF5
-MPASM 5.54  /HOME/FENRIS/WORK/DEAD/UNIVERSIT   10-7-2021  15:12:31         PAGE 12
+MPASM 5.54  /HOME/FENRIS/WORK/DEAD/UNIVERSIT   10-14-2021  20:50:23         PAGE 12
 
 
 SYMBOL TABLE
@@ -671,7 +672,7 @@ TRISA7                            00000007
 TRISB                             00000F93
 TRISB0                            00000000
 TRISB1                            00000001
-MPASM 5.54  /HOME/FENRIS/WORK/DEAD/UNIVERSIT   10-7-2021  15:12:31         PAGE 13
+MPASM 5.54  /HOME/FENRIS/WORK/DEAD/UNIVERSIT   10-14-2021  20:50:23         PAGE 13
 
 
 SYMBOL TABLE
@@ -730,7 +731,7 @@ VREFN                             00000002
 VREFP                             00000003
 W                                 00000000
 WCOL                              00000007
-MPASM 5.54  /HOME/FENRIS/WORK/DEAD/UNIVERSIT   10-7-2021  15:12:31         PAGE 14
+MPASM 5.54  /HOME/FENRIS/WORK/DEAD/UNIVERSIT   10-14-2021  20:50:23         PAGE 14
 
 
 SYMBOL TABLE
@@ -789,7 +790,7 @@ _EBTR2_ON_7L                      000000FB
 _EBTR3_OFF_7L                     000000FF
 _EBTR3_ON_7L                      000000F7
 _EBTRB_OFF_7H                     000000FF
-MPASM 5.54  /HOME/FENRIS/WORK/DEAD/UNIVERSIT   10-7-2021  15:12:31         PAGE 15
+MPASM 5.54  /HOME/FENRIS/WORK/DEAD/UNIVERSIT   10-14-2021  20:50:23         PAGE 15
 
 
 SYMBOL TABLE
@@ -848,7 +849,7 @@ _WDTPS_8192_2H                    000000FB
 _WDTPS_8_2H                       000000E7
 _WDT_OFF_2H                       000000FE
 _WDT_ON_2H                        000000FF
-MPASM 5.54  /HOME/FENRIS/WORK/DEAD/UNIVERSIT   10-7-2021  15:12:31         PAGE 16
+MPASM 5.54  /HOME/FENRIS/WORK/DEAD/UNIVERSIT   10-14-2021  20:50:23         PAGE 16
 
 
 SYMBOL TABLE
