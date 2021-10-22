@@ -1,0 +1,192 @@
+\documentclass[14pt]{extarticle}
+
+\usepackage[english]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{hyperref}
+\usepackage{graphicx,eso-pic}
+\usepackage{newtxtext}
+\usepackage{setspace}
+\usepackage{lipsum}
+\usepackage{titlesec}
+\usepackage{pdfpages}
+\usepackage{indentfirst}
+\usepackage[bottom=1.5cm,top=2.5cm,left=2cm,right=2cm]{geometry}
+
+\hypersetup{
+    colorlinks=true,
+    linkcolor=black,
+    filecolor=magenta,      
+    urlcolor=blue,
+    pdftitle={Internship Report},
+    pdfpagemode=FullScreen,
+    }
+
+\urlstyle{same}
+
+\makeatletter
+
+\setlength{\parskip}{1em}
+
+\newcommand\frontmatter{
+    \cleardoublepage
+    \pagenumbering{roman}
+}
+
+\newcommand\mainmatter{
+    \cleardoublepage
+    \pagenumbering{arabic}
+}
+
+\newcommand\backmatter{
+    \if @openright
+        \cleardoublepage
+    \else
+        \clearpage
+    \fi
+}
+
+\makeatother
+
+\titleformat{\section}[block]{\Large\bfseries\filcenter}{}{1em}{}
+
+
+\title{Python Development}
+\author{}
+\date{}
+
+\begin{document}
+
+\frontmatter
+
+\newgeometry{bottom=2cm,top=2cm,left=1.5cm,right=1.5cm}
+\addcontentsline{toc}{section}{Title}
+\maketitle
+
+\vspace{-5em}
+
+\begin{center}
+    \singlespacing
+\textbf {A SUMMER TRAINING REPORT} \\ 
+\emph {Submitted by} \\ 
+\textbf {RISHABH ANAND} \\
+\textbf {19BCS4525 }   \\
+
+\vspace{1cm}
+\onehalfspacing
+\emph {in partial fulfilment of Summer training for the award of the degree} \\ 
+\emph {of} \\ 
+
+\vspace{1.5cm}
+\singlespacing
+
+BACHELOR OF ENGINEERING \\
+IN \\
+COMPUTER SCIENCE and ENGINEERING\\
+
+\vspace{1cm}
+
+\includegraphics[scale=0.25]{private/seal.png}
+
+\vspace{1cm}
+\singlespacing
+
+APEX INSTITUTE OF TECHNOLOGY\\
+CHANDIGARH UNIVERSITY, GHARUAN\\
+Mohali, Punjab \\
+
+\onehalfspacing
+August, 2021
+
+\end{center}
+\restoregeometry
+
+\newpage
+\addcontentsline{toc}{section}{Certificate}
+\includepdf[pages={1}]{private/certificate.pdf}
+
+\newpage
+\addcontentsline{toc}{section}{Acknowlgement}
+\section*{Acknowlgement}
+\par I thank everyone who were, in one way or another, instrumental in the completion of my internship at Kamtech Associates Pvt. Ltd.
+
+\par First, I would like to thank Mr. Samir Dutta for taking me under his wing during my time at Kamtech and supervising me. I would also like to thank Mr. Saksham Gupta for giving me an oppourtunity to work at his company and his projects.
+
+\par I also want to give my thanks to all the fellow developers and consultants as well as my fellow interns and teammatesat Kamtech, who were extremely helpful and supportive throughout my time there.
+
+\par A special thanks to my parents who took care of me and provided me with all the necessary tools I required during my internship tenure.
+
+\newpage
+\addcontentsline{toc}{section}{List of figures}
+\listoffigures
+
+\newpage
+\addcontentsline{toc}{section}{List of tables}
+\listoftables
+
+\newpage
+\addcontentsline{toc}{section}{List of photographs}
+\section*{List of photographs}
+
+\newpage
+\addcontentsline{toc}{section}{ABSTRACT}
+\section*{ABSTRACT}
+\onehalfspacing
+
+I worked on various project under my 13 week tenure as a Python Developer at Kamtech Associates Pvt. Ltd. like : 
+
+Built a website using \textbf{Django / Python} as back-end and \textbf{HTML 5 / CSS 3} as front-end. The site, \href{https://edubild.com/bidfast/}{BidFast}, first-of-its-kind Tendering Automation Tool, which automates the tedious process of creating technical proposals in response to procurement notices (RFP, EOI and RFQ) published by various procurement agencies (UNDP, UNGM, AfDB, TED, etc.)
+
+The Django tool was based on a dynamic hierarchical model of the company where it was being deployed to. However, the basic structure / access remained the same. A central admin, who can add / remove as well as control the access of various department admins for tendering. The various depratment admins then control the file structure for the tender and create the CV, which is also dynamic. Then, the tool manages to assemble the whole document using \textbf{Jinja templates} and \textbf{PyDocs}.
+
+Deployed the same website as an onsite tool on industrial servers for core companies like \textbf{Accenture} and \textbf{KPMG}.
+
+Worked on web-scraping, using \textbf{Selenium / BeautifulSoup} and \textbf{Jupyter} and data collation scripts to generate an end to end yearly medical database for \textbf{Rajasthan Foundation}, which included records, for the total population, like their medical insurances and the grant given by the government for those who can't afford their bills.
+
+Generated a database for \textbf{Edubild} website, a subset of Kamtech. The database consists of 10,000+ MCQs scraped from various websites like \href{https:\\www.sanfoundary.com}{Sanfoundary} and \href{https:\\www.tutorialspoint.com}{Tutorials Point}. The script successfully generated a database for all the MCQs with answer key which was then deployed to take tests of individuals on the Edubild site.
+
+\setlength{\parskip}{0em}
+
+\newpage
+\addcontentsline{toc}{section}{CONTENTS}
+\begin{center}
+    \tableofcontents
+\end{center}
+
+\mainmatter
+
+\setlength{\parskip}{1em}
+
+\newpage
+\section{INTRODUCTION}
+\lipsum
+
+\newpage
+\section{THEORY}
+\lipsum
+
+\newpage
+\section{METHODOLOGY ADOPTED}
+\lipsum
+
+\newpage
+\section{RESULTS and DISCUSSION}
+\lipsum
+
+\newpage
+\section{CONCLUSIONS}
+\lipsum
+
+\backmatter
+
+\newpage
+\addcontentsline{toc}{section}{REFERENCES}
+\section*{REFERENCES}
+\lipsum[10]
+
+\newpage
+\addcontentsline{toc}{section}{APPENDIX}
+\section*{APPENDIX}
+\lipsum[10]
+
+
+\end{document}
