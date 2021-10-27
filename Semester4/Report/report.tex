@@ -15,7 +15,7 @@
 \hypersetup{
     colorlinks=true,
     linkcolor=black,
-    filecolor=magenta,      
+    filecolor=magenta,
     urlcolor=blue,
     pdftitle={Internship Report},
     pdfpagemode=FullScreen,
@@ -66,15 +66,15 @@
 
 \begin{center}
     \singlespacing
-\textbf {A SUMMER TRAINING REPORT} \\ 
-\emph {Submitted by} \\ 
+\textbf {A SUMMER TRAINING REPORT} \\
+\emph {Submitted by} \\
 \textbf {RISHABH ANAND} \\
 \textbf {19BCS4525 }   \\
 
 \vspace{1cm}
 \onehalfspacing
-\emph {in partial fulfilment of Summer training for the award of the degree} \\ 
-\emph {of} \\ 
+\emph {in partial fulfilment of Summer training for the award of the degree} \\
+\emph {of} \\
 
 \vspace{1.5cm}
 \singlespacing
@@ -132,7 +132,7 @@ August, 2021
 \section*{ABSTRACT}
 \onehalfspacing
 
-I worked on various project under my 13 week tenure as a Python Developer at Kamtech Associates Pvt. Ltd. like : 
+I worked on various project under my 13 week tenure as a Python Developer at Kamtech Associates Pvt. Ltd. like :
 
 Built a website using \textbf{Django / Python} as back-end and \textbf{HTML 5 / CSS 3} as front-end. The site, \href{https://edubild.com/bidfast/}{BidFast}, first-of-its-kind Tendering Automation Tool, which automates the tedious process of creating technical proposals in response to procurement notices (RFP, EOI and RFQ) published by various procurement agencies (UNDP, UNGM, AfDB, TED, etc.)
 
@@ -158,15 +158,54 @@ Generated a database for \textbf{Edubild} website, a subset of Kamtech. The data
 
 \newpage
 \section{INTRODUCTION}
-\lipsum
+
+\par \textbf{Kamtech Associates Private Limited} is a a technology based consultancy and solutions company working across industry and business domains operating in emerging and mature economies like Africa, Europe, Middle East and Asia and a two-time National Award winner by Government of India.
+
+\par A subset of Kamtech Associates is \textbf{EduBild}. Among the many projects that were undergoing in the company at that moment, I got to work mainly on BidFast, which is the simplest tool for your tendering needs.
+
+\par \textbf{BidFast} has the capability to automate the generation of complete tenders for various types of proposals like RFPs,RFQs, RFIs, EOIs, RFx along with business proposals for your company. It has a one-time content creation and storage management system that ensures minimum human interaction and safety for your precious data on a fundamental level.
+
+\par The one of a kind content management system that I personally worked on ensures effortless document creation. It ensures that there is absolutely no more mindless copying and pasting, no more outdated documents/files and no more room for human errors what-so-ever. BidFast offers well structured content management for all your tender documents.
+
+\par Apart from BidFast I also worked on some small web-scraping assignments which included some advanced web-crawling and automated dataset generation for EduBild's experienships tests and selections. The dataset generqated was directly uploaded to their server and the test results and selections were taken for more than 500 participants/applicants.
 
 \newpage
 \section{THEORY}
-\lipsum
+\par During my tenure, I used a number of python libraries like :
+\begin{itemize}
+    \item Flask
+     \begin{itemize}
+        \item \par Flask is a micro web framework written in Python. It is classified as a microframework because it does not require particular tools or libraries. It has no database abstraction layer, form validation, or any other components where pre-existing third-party libraries provide common functions
+        \item \par The tool BidFast was first create dusing Flask. It was serving the purpose but then the whole system was switched to Django, mainly due to Flask's scalability issues.
+    \end{itemize}
+    \item Django
+    \begin{itemize}
+        \item \par Django is a Python-based free and open-source web framework that follows the model–template–views architectural pattern.
+        \item \par The tool BidFast was re-created using BidFast with better UI/UX, faster workflow and even more versatility.
+        \item \par After switching to Django, we had to add support for databases and make a better frontend for the overall project. \textbf{SQLAlchecmy}, an open-source SQL toolkit and object-relational mapper for the Python programming language released under the MIT Licens,  was used for creating/managing the database layer. It provides agood wrapped environment for SQLs inside python. The database framework used was \textbf{sqlite} because of it's simplicity and speed.
+        \item \par Apart from the backend, the front-end was also redesigned keeping with the newer framework with help nof \textbf{BootStrap},Bootstrap is a free and open-source CSS framework directed at responsive, mobile-first front-end web development, which contains CSS- and JavaScript-based design templates for typography, forms, buttons, navigation, and other interface components, which offers templated and well documented html/css snippets for faster website creation.
+    \end{itemize}
+    \item Selenium
+     \begin{itemize}
+        \item \par Selenium is an open-source automated testing framework for web applications. Selenium provides a playback tool for authoring functional tests without the need to learn a test scripting language.
+        \item \par The usage of Selenium is standarized for web automation at this point in the market. Selenium is basically used to automate the testing across various web browsers. It supports various browsers like Chrome, Mozilla, Firefox, Safari, and IE.
+    \end{itemize}
+    \item BeautifulSoup
+    \begin{itemize}
+        \item Beautiful Soup is a Python package for parsing HTML and XML documents. It creates a parse tree for parsed pages that can be used to extract data from HTML, which is useful for web scraping.
+        \item It basically parses a HTML or XML web-page and generates a minimal text only content tree for the web-pages it's being used on for data extraction and string conversion.
+    \end{itemize}
+    \item Others
+    \begin{itemize}
+        \item Pillow - In automatic CV generation, Pillow was used at times for images processing and page manipulation.
+        \item Jinja - Jinja is a document-tagging and temporary placeholder generator package that switches tags in document with the specified string provided at runtime.
+        \item PyDocs - Python wrappper for Docx generation and manipulation. Works with most MS-Office formats and a few Open-Source Document formats.
+    \end{itemize}
+\end{itemize}
 
 \newpage
 \section{METHODOLOGY ADOPTED}
-\lipsum
+
 
 \newpage
 \section{RESULTS and DISCUSSION}
