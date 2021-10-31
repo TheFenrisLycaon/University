@@ -115,17 +115,10 @@ August, 2021
 
 \par A special thanks to my parents who took care of me and provided me with all the necessary tools I required during my internship tenure.
 
+
 \newpage
-\addcontentsline{toc}{section}{List of figures}
+\addcontentsline{toc}{section}{List of Figures}
 \listoffigures
-
-\newpage
-\addcontentsline{toc}{section}{List of tables}
-\listoftables
-
-\newpage
-\addcontentsline{toc}{section}{List of photographs}
-\section*{List of photographs}
 
 \newpage
 \addcontentsline{toc}{section}{ABSTRACT}
@@ -205,27 +198,63 @@ Generated a database for \textbf{Edubild} website, a subset of Kamtech. The data
 
 \newpage
 \section{METHODOLOGY ADOPTED}
+\subsection{BidFast}
+
+\begin{figure}[hbp]
+    \centering
+    \caption{BidFast}
+    \includegraphics[width=0.95\textwidth]{private/BF.png}
+\end{figure}
+
+BidFast is built on Django and uses sqlite for the backend. Users can generate a CV Database using the intuitive generator that I made. The whole system uses position based access, i.e., if a person is admin for a particular department he/she cannot see/alter the CVs or any data for that matter, and only access his/her files. The CV data stored in the database is fetched by the countless templates created by the companies or the basic ones that were preconfigured by our team. We use PyDocs to first generate the doc, mixed with Jinja templates to fill the data obtained from the backend.
+
+To generate the position based access, we used different Django views. And a custom function that ensured the protction of data.
+
+\subsection{EduBild}
+
+EduBild, as mentioned above, provides a platform for testing and assessing the skills of candidates that apply for an experienship. The site has a database of 10,000+ questions curated from different sites and resources. The script was develpoed solely by me and was able to automatically crawl, parse and understand the Q/As in MCQ formast using Natural Language Processing and Machine Learning. The program was also able to store all the data directly to the databaseusing APIs.
+
+\begin{figure}[hbp]
+    \centering
+    \caption{EduBild}
+    \includegraphics[width=0.95\textwidth]{private/EB.png}
+\end{figure}
 
 
 \newpage
-\section{RESULTS and DISCUSSION}
-\lipsum
+\subsection{Scraping}
+
+Apart from these two main projects, I also worked on some side-projects small projects for the Rajasthan Government through Kamtech. I worked on generating a program to parse and curate the data from various medical records and databases.
+
+\begin{figure}[hbp]
+    \centering
+    \caption{Kamtech}
+    \includegraphics[width=0.95\textwidth]{private/KA.png}
+\end{figure}
+
 
 \newpage
 \section{CONCLUSIONS}
-\lipsum
 
-\backmatter
+During the three months tenure, that I served as a Python Developer at Kamtech, I learned a number of things that will help me in my career and my life. I learned how to handle a team when I was working on BidFast as I was maintaning the git repository and the trello boards for the overall development while also coding the software. I helped my understand how to manage people and get work done.
+
+I learned making sites woth Django. I learned how to work with views and forms. I learned control based access on data. I learned basics of Web Development while building the website.
+
+While working on EduBild I learned advanced web-scraping and data retention. I learned working with SQL and advanced Natural Language Processing. I learned the importance of experience in teh field of IT. I learned the fundamentals of text processing.
+
+While working on the side projects I learned the very important skill of time management. I learned how to work with government databases and the level of security and clearance needed to access the data stored there.
+
+Apart from these, I learned skills like communication and group discussion which are equally important as technical skills if you have to survive inside corporate. I learned why it is important to present my point of view in certain situation and how to do that. I learned why it is important to participate in group activities and how to work with people who want to contribute to the same cause.
+
+Moreover, I feel more confident now that I have finished an internship in the industry. I feel that I have the skills and knowledge needed to get inside the corporate world. I feel I can succeed.
 
 \newpage
 \addcontentsline{toc}{section}{REFERENCES}
 \section*{REFERENCES}
-\lipsum[10]
-
-\newpage
-\addcontentsline{toc}{section}{APPENDIX}
-\section*{APPENDIX}
-\lipsum[10]
-
+\begin{enumerate}
+    \item \href{https://www.kamtech.in/}{Kamtech}
+    \item \href{https://www.edubild.com/}{EduBild}
+    \item \href{https://edubild.com/bidfast/}{BidFast}
+\end{enumerate}
 
 \end{document}
