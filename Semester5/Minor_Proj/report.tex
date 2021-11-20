@@ -1,0 +1,164 @@
+\documentclass[14pt]{extarticle}
+
+\usepackage[english]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{hyperref}
+\usepackage{graphicx,eso-pic}
+\usepackage{newtxtext}
+\usepackage{setspace}
+\usepackage{lipsum}
+\usepackage{titlesec}
+\usepackage{pdfpages}
+\usepackage{indentfirst}
+\usepackage[bottom=1.5cm,top=2.5cm,left=2cm,right=2cm]{geometry}
+
+\hypersetup{
+    colorlinks=true,
+    linkcolor=black,
+    filecolor=magenta,
+    urlcolor=blue,
+    pdftitle={Project Report},
+    pdfpagemode=FullScreen,
+    }
+
+\urlstyle{same}
+
+\makeatletter
+
+\setlength{\parskip}{1em}
+
+\newcommand\frontmatter{
+    \cleardoublepage
+    \pagenumbering{roman}
+}
+
+\newcommand\mainmatter{
+    \cleardoublepage
+    \pagenumbering{arabic}
+}
+
+\newcommand\backmatter{
+    \if @openright
+        \cleardoublepage
+    \else
+        \clearpage
+    \fi
+}
+
+\makeatother
+
+\titleformat{\section}[block]{\Large\bfseries\filcenter}{}{1em}{}
+
+
+\vspace{-3em}
+
+\title{Federated Learning with IoT Devices}
+\author{}
+\date{}
+
+\begin{document}
+
+\frontmatter
+
+\newgeometry{bottom=2cm,top=2cm,left=1.5cm,right=1.5cm}
+\addcontentsline{toc}{section}{Title}
+\maketitle
+
+\vspace{-7em}
+
+\begin{center}
+    \singlespacing
+\textbf {A PROJECT REPORT} \\
+\emph {Submitted by} \\
+\textbf {RISHABH ANAND} \\
+\textbf {19BCS4525 }   \\
+\textbf{UDITA MITRA} \\
+\textbf{19BCS4662} \\
+\textbf{VANDHANA CHAUHAN} \\
+\textbf{19BCS4532} \\
+\textbf{KHUSHWANT SINGH RATHORE} \\
+\textbf{19BCS4644} \\
+\textbf{ABHISHEK GUPTA} \\
+\textbf{19BCS4579} \\
+
+\vspace{1.5em }
+Under the Supervision of:\\
+Dr. PIYUSH SAMANTH
+
+\singlespacing
+
+BACHELOR OF ENGINEERING \\
+IN \\
+COMPUTER SCIENCE and ENGINEERIG
+
+\vspace{1em}
+\includegraphics[scale=0.25]{private/seal.png}
+
+\singlespacing
+
+APEX INSTITUTE OF TECHNOLOGY\\
+CHANDIGARH UNIVERSITY, GHARUAN\\
+Mohali, Punjab \\
+
+\onehalfspacing
+August, 2021
+
+\end{center}
+\restoregeometry
+
+\newpage
+\addcontentsline{toc}{section}{Acknowlgement}
+\section*{Acknowlgement}
+
+We, ‘Rishabh Anand’, ‘Udita Mitra’, ‘Vandana Chauhan’, ‘Khushwant Singh Rathore’ and ‘Abhishek Gupta’, student of ‘Bachelor of Engineering in Computer Science and Engineering - IoT’, session:2019-23, Department of Computer Science and Engineering, Apex Institute of Technology, Chandigarh University, Punjab, hereby declare that the work presented in this Project Work entitled ‘Federated Learning With IoT Devices’ is the outcome of our own bona fide work and is correct to the best of our knowledge and this work has been undertaken taking care of Engineering Ethics. It contains no material previously published or written by another person nor material which has been accepted for the award of any other degree or diploma of the university or other institute of higher learning, except where due acknowledgment has been made in the text.
+
+\vspace{5em}
+\begin{flushright}
+    Rishabh Anand\\
+    19BCS4525
+\end{flushright}
+
+\vspace{13em}
+Date: 15 November, 2021 \\
+ 
+Place: Ludhiana (Punjab)\\
+
+\newpage
+\addcontentsline{toc}{section}{List of Figures}
+\listoffigures
+
+\newpage
+\addcontentsline{toc}{section}{ABSTRACT}
+\section*{ABSTRACT}
+\onehalfspacing
+
+\setlength{\parskip}{0em}
+
+\newpage
+\addcontentsline{toc}{section}{CONTENTS}
+\begin{center}
+    \tableofcontents
+\end{center}
+
+\mainmatter
+
+\setlength{\parskip}{1em}
+
+\newpage
+\section{INTRODUCTION}
+
+\newpage
+\section{THEORY}
+
+
+\newpage
+\section{METHODOLOGY ADOPTED}
+
+\newpage
+\section{CONCLUSIONS}
+
+\newpage
+\addcontentsline{toc}{section}{REFERENCES}
+\section*{REFERENCES}
+
+\end{document}
