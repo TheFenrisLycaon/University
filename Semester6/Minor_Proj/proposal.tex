@@ -1,0 +1,87 @@
+\documentclass{article}
+
+\usepackage[english]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx,eso-pic}
+\usepackage{newtxtext}
+\usepackage{array}
+\usepackage{lipsum}
+\usepackage{indentfirst}
+\usepackage{setspace}
+\usepackage[bottom=1.5cm,top=1.5cm,left=2cm,right=1.5cm]{geometry}
+
+\pagenumbering{gobble}
+\setlength{\parskip}{1em}
+
+\title{Project Proposal}
+\author{}
+\date{}
+
+
+\begin{document}
+
+\includegraphics[width=\textwidth]{private/Header.jpeg}
+\vspace{3em}
+
+\section{Project Title}
+
+\Large{Federated Learning with IoT Devices}
+
+\section{Project Scope}
+
+In the world of all-things-smart, everything is being run on data. Anything that we see is data and everything that we use either generates or uses data. Data can comprise of anything, ranging from the weather details of your city to your personal health details.
+
+The data generated, may contain sensitive information about an individual or even an organization. If the owner has to share there data with various other groups of people for various reasons like analysis. A link of the data is then made available to the person of choice in encrpyted form.
+
+Looking at this from a developers perspective, we may need data from different sources to fully complete our analysis and give meaningful results. But since we don't have the data at one place, it becomes a really difficult task to use any particular mode of training. Well any mode other than FEDERATED LEARNING. Federated Learning is a very good way to use sensitive data from different parties who are not willing to disclose their exact data. 
+
+In our case, we are using a custom built oximeter to generate data and then analysis the Heart Rate and SPO2 of different individuals and then predict things like who has a higher chance of getting a heart attack and who is running low on SPO\textsubscript{2}. Now, people may not want to share their heart rate information with general public, so instead they hash their reading before passing the information. We then aggregate that data onto our process and then, predict the desired information and keep the private information private.
+
+\section{Requirements}
+
+\begin{tabular}{ll}
+    MAX30100 \textbackslash 02 \textbackslash 05 & : To get Heart Rate and SPO2 information \\
+    ESP32 & : To send data online to a server \\
+    Server (Thingspeak \textbackslash{} GC-IoT) & : To store, encrypt and share the data \\
+    Colab \textbackslash{} Jupyter & : Analysis for Data\\
+\end{tabular}
+
+\section*{Student Details}
+
+\begin{center}
+\begin{tabular}{ |m{0.25\textwidth}|m{6em}|m{7em}| }
+    \hline
+    \textbf{Student Name} & \textbf{UID} & \textbf{Signature} \\
+    \hline
+    \begin{center}Abhishek Gupta\end{center} & \begin{center}19BCS4579\end{center} & \raisebox{-0.5em}{\includegraphics[scale=0.09]{private/gSign.jpeg}} \\
+    \hline
+    \begin{center}Khushwant Rathore\end{center} & \begin{center}19BCS4644\end{center} & \raisebox{-1em}{\includegraphics[scale=0.07]{private/rSign.jpeg}}\\
+    \hline
+    \begin{center}Rishabh Anand\end{center} & \begin{center}19BCS4525\end{center} & \raisebox{-1em}{\includegraphics[scale=0.05]{private/aSign.jpg}} \\
+    \hline
+    \begin{center}Udita Mitra\end{center} & \begin{center}19BCS4662\end{center} & \raisebox{-1em}{\includegraphics[scale=0.2]{private/mSign.jpeg}} \\
+    \hline
+    \begin{center}Vandana Chauhan\end{center} & \begin{center}19BCS4532\end{center} & \raisebox{-1em}{\includegraphics[scale=0.15]{private/cSign.png}} \\
+    \hline
+\end{tabular}
+\end{center}
+
+\section*{Approval and Authority to Proceed}
+
+We approve the project as described above,and authorize the team to proceed.
+
+
+\begin{center}
+\begin{tabular}{ |p{9em}|p{9em}|p{9em}| }
+    \hline
+    \begin{center}\textbf{Name}\end{center} & \begin{center}\textbf{Title}\end{center} & \begin{center}\textbf{Signature}\end{center} \\
+    \hline
+    &\begin{center}{Supervisor}\end{center}&\\
+    \hline
+    &&\\
+    &&\\
+    \hline
+\end{tabular}
+\end{center}
+
+\end{document}
