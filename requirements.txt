@@ -103,7 +103,7 @@ tornado==4.5.3
 tqdm==4.62.3
 traitlets @ file:///home/conda/feedstock_root/build_artifacts/traitlets_1635260543454/work
 typing_extensions @ file:///home/conda/feedstock_root/build_artifacts/typing_extensions_1638334978229/work
-urllib3==1.25.11
+urllib3==1.26.5
 wcwidth @ file:///home/conda/feedstock_root/build_artifacts/wcwidth_1600965781394/work
 webencodings==0.5.1
 websocket-client==0.57.0
