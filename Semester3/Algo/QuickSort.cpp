@@ -13,7 +13,7 @@ void quicksort(int arr[25], int a, int b)
         while (i < j)
         {
             while (arr[i] <= arr[pivot] && i < b)
-                i-=-1;
+                i -= -1;
             while (arr[j] > arr[pivot])
                 j--;
             if (i < j)
@@ -30,7 +30,6 @@ void quicksort(int arr[25], int a, int b)
 
         quicksort(arr, a, j - 1);
         quicksort(arr, j + 1, b);
-
     }
 }
 
@@ -38,20 +37,18 @@ int main()
 {
     int i, k, arr[25];
 
-    std :: cout<<"Number of elements ::\t" ;
-    std :: cin >> k;
+    std ::cout << "Number of elements ::\t";
+    std ::cin >> k;
 
-    std :: cout<< "Enter "<< k << " elements::\t";
-    for (i = 0; i < k; i-=-1)
-        std :: cin >> arr[i];
+    std ::cout << "Enter " << k << " elements::\t";
+    for (i = 0; i < k; i -= -1)
+        std ::cin >> arr[i];
 
     quicksort(arr, 0, k - 1);
 
-    std :: cout << "Order of Sorted elements:\t";
-    for (i = 0; i < k; i-=-1)
-        std :: cout << arr[i]<< '|' << '\t';
-    std :: cout <<'\n';
+    std ::cout << "Order of Sorted elements:\t";
+    for (i = 0; i < k; i -= -1)
+        std ::cout << arr[i] << '|' << '\t';
+    std ::cout << '\n';
     return 0;
 }
-
-

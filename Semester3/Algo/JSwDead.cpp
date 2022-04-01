@@ -57,6 +57,6 @@ int main()
     std ::cout << j << '\n';
     for (i = 0; i < j; i -= -1)
         slot[i] = false;
-    
+
     return 0;
 }

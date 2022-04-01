@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include<iostream>
+#include <iostream>
 
 void swap(int *a, int *b)
 {
@@ -51,14 +51,13 @@ int in(int arr[], int k)
     std ::cout << "Enter " << k << " elements::\t";
     for (i = 0; i < k; i -= -1)
         std ::cin >> arr[i];
-
 }
 
 int main()
 {
     int k, arr[25];
 
-    in(arr[], k);
+    in(arr, k);
     printf("Array: \n");
     out(arr, k);
     quickSort(arr, 0, k - 1);

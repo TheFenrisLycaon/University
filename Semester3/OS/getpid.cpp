@@ -1,14 +1,14 @@
-// C++ Code to demonstrate getpid() 
-#include <iostream> 
-#include <unistd.h> 
-using namespace std; 
+// C++ Code to demonstrate getpid()
+#include <iostream>
+#include <unistd.h>
+using namespace std;
 
-// Driver Code 
-int main() 
-{ 
-	int pid = fork(); 
-	if (pid == 0) 
+// Driver Code
+int main()
+{
+	int pid = fork();
+	if (pid == 0)
 		cout << "\nCurrent process id of Process : "
-			<< getpid() << endl; 
-	return 0; 
-} 
+			 << getpid() << endl;
+	return 0;
+}

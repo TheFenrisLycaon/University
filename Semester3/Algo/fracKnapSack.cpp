@@ -21,7 +21,7 @@ double fractionalKnapsack(int W, struct Item arr[], int n)
     for (int i = 0; i < n; i++)
     {
         std ::cout << arr[i].value << " \t" << arr[i].weight << "\t:\t"
-             << ((double)arr[i].value / arr[i].weight) << std :: endl;
+                   << ((double)arr[i].value / arr[i].weight) << std ::endl;
     }
 
     std ::sort(arr, arr + n, cmp);
@@ -47,7 +47,7 @@ double fractionalKnapsack(int W, struct Item arr[], int n)
 int main()
 {
     int W = 50;
-    Item arr[] = {{80, 10}, {10, 20}, {150, 30}, {90,40}};
+    Item arr[] = {{80, 10}, {10, 20}, {150, 30}, {90, 40}};
     int n = sizeof(arr) / sizeof(arr[0]);
     std ::cout << "Maximum value we can obtain =\n"
                << fractionalKnapsack(W, arr, n) << std ::endl;

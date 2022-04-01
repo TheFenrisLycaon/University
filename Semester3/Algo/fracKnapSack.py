@@ -1,5 +1,4 @@
 class ItemValue:
-
     def __init__(self, wt, val, ind):
         self.wt = wt
         self.val = val
@@ -11,7 +10,6 @@ class ItemValue:
 
 
 class FractionalKnapSack:
-
     @staticmethod
     def getMaxValue(wt, val, capacity):
 

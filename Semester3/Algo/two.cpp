@@ -386,8 +386,6 @@ int main()
     traversal(root);
 }
 
-
-
 // BreeInsertion(T, k)
 // r root[T]
 // if n[r] = 2t - 1

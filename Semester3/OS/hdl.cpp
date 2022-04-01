@@ -71,7 +71,7 @@ display(node *root)
     settextjustify(1, 1);
     setfillstyle(1, BLUE);
     setcolor(14);
-    
+
     if (root != NULL)
     {
         for (i = 0;

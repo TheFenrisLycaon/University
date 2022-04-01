@@ -1,6 +1,6 @@
-#include<boost/thread.hpp>
-#include<stdio.h>
-#include<iostream>
+#include <boost/thread.hpp>
+#include <stdio.h>
+#include <iostream>
 
 class Task;
 class TaskScheduler;
@@ -15,8 +15,8 @@ public:
     virtual ~Task() {}
 
     /** Checks if all dependencies are met and the task can run
-	 *  @returns true if scheduler can run task, false otherwise
-	 */
+     *  @returns true if scheduler can run task, false otherwise
+     */
     virtual BOOL isReady() = 0;
 
     /// User task code goes here
@@ -26,8 +26,8 @@ public:
     BOOL complete() { return m_complete; }
 
     /** Sets the complete status of the task
-	 *  @param v Completetion status
-	 */
+     *  @param v Completetion status
+     */
     void setComplete(BOOL v) { m_complete = v; }
 
 private:
@@ -40,31 +40,31 @@ class TaskScheduler
 {
 public:
     /** Create scheduler with default number of worker threads.
-	 *  Default is 1 thread per 1 logical core (core or HT unit)
-	 */
+     *  Default is 1 thread per 1 logical core (core or HT unit)
+     */
     TaskScheduler();
 
     /** Create scheduler with specified number of worker threads
-	 *  @param n Number of worker threads (must be less than MAX_THREADS)
-	 */
+     *  @param n Number of worker threads (must be less than MAX_THREADS)
+     */
     TaskScheduler(U32 n);
 
     /// Finishes all currently running tasks, then stops all worker threads.
     ~TaskScheduler();
 
     /** Schedules a task for execection
-	 *  The task is assigned to the first idle work thread if there is one;
-	 *  otherwise, the task is put on the queue of a worker thread. Pushed tasks
-	 *  execute immediately.
-	 */
+     *  The task is assigned to the first idle work thread if there is one;
+     *  otherwise, the task is put on the queue of a worker thread. Pushed tasks
+     *  execute immediately.
+     */
     void pushTask(Task *t);
 
     /// Blocks execution until all worker threads have completed there tasks
     void runUntilDone();
 
     /** Gets number of worker threads
-	 *  @return Number of worker threads
-	 */
+     *  @return Number of worker threads
+     */
     U32 threadCount();
 
 private:
@@ -85,35 +85,35 @@ class WorkerThread
 {
 public:
     /** Creates a new worker thread--only called by a TaskScheduler
-	 *  The system thread is started and enters idle, waiting on a condition variable.
-	 *  @param scheduler Parent TaskScheduler
-	 */
+     *  The system thread is started and enters idle, waiting on a condition variable.
+     *  @param scheduler Parent TaskScheduler
+     */
     WorkerThread(TaskScheduler *scheduler);
 
     /// Deletes underlying system thread
     ~WorkerThread();
 
     /** Adds a task to the local task pool
-	 *  This method is called by the TaskScheduler from the main thread and uses
-	 *  a spinlock to access task queue. Execution of the task can begin immediately after
-	 *  the lock mutex is released.
-	 *  @param t Task to add to queue
-	 */
+     *  This method is called by the TaskScheduler from the main thread and uses
+     *  a spinlock to access task queue. Execution of the task can begin immediately after
+     *  the lock mutex is released.
+     *  @param t Task to add to queue
+     */
     void pushTask(Task *t);
 
     /** Checks whether the worker thread is currently idling
-	 *  @return true if idling, false otherwise
-	 */
+     *  @return true if idling, false otherwise
+     */
     BOOL idling();
 
     /** Blocks execution until the worker thread has completed all tasks in its queue
-	 *  and can no longer find tasks to steal
-	 */
+     *  and can no longer find tasks to steal
+     */
     void blockUntilDone();
 
     /** Wakes the thread and joins execution
-	 *  TaskScheduler must have m_running = false or method will block indefinitely
-	 */
+     *  TaskScheduler must have m_running = false or method will block indefinitely
+     */
     void stop();
 
 private:

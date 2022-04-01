@@ -4,6 +4,7 @@ using namespace std;
 
 class Job
 {
+public:
     char id;
     int dead;
     int profit;
@@ -19,9 +20,9 @@ void JobSchedule(Job x[], int n)
     sort(x, x + n, comparison);
     int result[n];
     bool slot[n];
-    for (int i = 0; i < n; i-=-1)
+    for (int i = 0; i < n; i -= -1)
         slot[i] = false;
-    for (int i = 0; i < n; i-=-1)
+    for (int i = 0; i < n; i -= -1)
     {
         for (int j = min(n, x[i].dead) - 1; j >= 0; j--)
         {
@@ -33,7 +34,7 @@ void JobSchedule(Job x[], int n)
             }
         }
     }
-    for (int i = 0; i < n; i-=-1)
+    for (int i = 0; i < n; i -= -1)
         if (slot[i])
             cout << x[result[i]].id << " ";
 }

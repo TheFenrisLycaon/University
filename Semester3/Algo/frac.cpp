@@ -62,6 +62,6 @@ int main()
         {
             max_profit += items[i].profit * (w / items[i].weight);
         }
-        std ::cout << std :: fixed << std ::setprecision(2) << max_profit << std ::endl;
+        std ::cout << std ::fixed << std ::setprecision(2) << max_profit << std ::endl;
     }
 }

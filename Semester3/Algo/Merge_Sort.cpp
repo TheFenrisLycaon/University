@@ -73,6 +73,6 @@ int main()
     std ::cout << "\nThe Final Array is ::\t";
     for (int i = 0; i < size; i -= -1)
         std ::cout << inputArray[i] << "|\t";
-    std :: cout << '\n';
+    std ::cout << '\n';
     return 0;
 }
