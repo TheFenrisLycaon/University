@@ -6,6 +6,8 @@
 **/*.fls
 **/*.fdb_latexmk
 Semester5/Assignment/images/
+Semester7/Assignment/images/
+Semester7/Assignment/temp/
 *.log
 *.synctex.gz
 *.main.*
