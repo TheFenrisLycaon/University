@@ -52,7 +52,7 @@ nbconvert==6.5.1
 nbformat==5.1.3
 nest-asyncio @ file:///home/conda/feedstock_root/build_artifacts/nest-asyncio_1638419302549/work
 netifaces==0.11.0
-notebook==6.4.10
+notebook==6.4.12
 numpy==1.22.0
 olefile==0.46
 openmined.threepio==0.2.0
