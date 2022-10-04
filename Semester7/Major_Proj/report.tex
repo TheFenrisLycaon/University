@@ -1,0 +1,176 @@
+\documentclass[14pt]{extarticle}
+
+\usepackage[english]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{hyperref}
+\usepackage{graphicx,eso-pic}
+\usepackage{newtxtext}
+\usepackage{setspace}
+\usepackage{lipsum}
+\usepackage{titlesec}
+\usepackage{pdfpages}
+\usepackage{indentfirst}
+\usepackage[bottom=1.5cm,top=2.5cm,left=2cm,right=2cm]{geometry}
+
+\hypersetup{
+    colorlinks=true,
+    linkcolor=black,
+    filecolor=magenta,
+    urlcolor=blue,
+    pdftitle={Project Report},
+    pdfpagemode=FullScreen,
+    }
+
+\urlstyle{same}
+
+\makeatletter
+
+\setlength{\parskip}{1em}
+
+\newcommand\frontmatter{
+    \cleardoublepage
+    \pagenumbering{roman}
+}
+
+\newcommand\mainmatter{
+    \cleardoublepage
+    \pagenumbering{arabic}
+}
+
+\newcommand\backmatter{
+    \if @openright
+        \cleardoublepage
+    \else
+        \clearpage
+    \fi
+}
+
+\makeatother
+
+\titleformat{\section}[block]{\Large\bfseries\filcenter}{}{1em}{}
+
+
+\vspace{-3em}
+
+\title{Forcasting AfterShock Locations \\
+using \\
+Deep Learning Sciences}
+\author{}
+\date{}
+
+\begin{document}
+
+\frontmatter
+
+\newgeometry{bottom=2cm,top=2cm,left=1.5cm,right=1.5cm}
+\addcontentsline{toc}{section}{Title}
+\maketitle
+
+\vspace{-7em}
+
+\begin{center}
+    \singlespacing
+\textbf {A PROJECT REPORT} \\
+\emph {Submitted by} \\
+\textbf {RISHABH ANAND} \\
+\textbf {19BCS4525 }   \\
+
+
+\vspace{1.5em }
+Under the Supervision of:\\
+Dr. Nikhil Aggarwal \\
+
+\singlespacing
+
+BACHELOR OF ENGINEERING \\
+IN \\
+COMPUTER SCIENCE and ENGINEERIG
+
+\vspace{1em}
+\includegraphics[scale=0.25]{private/seal.png}
+
+\singlespacing
+
+APEX INSTITUTE OF TECHNOLOGY\\
+CHANDIGARH UNIVERSITY, GHARUAN\\
+Mohali, Punjab \\
+
+\onehalfspacing
+May, 2022
+
+\end{center}
+\restoregeometry
+
+\newpage
+\addcontentsline{toc}{section}{Acknowlgement}
+\section*{Acknowlgement}
+
+We, 'Rishabh Anand', 'Abhishek Singh' and 'Shefali Yadav', students of 'Bachelor of Engineering in Computer Science and Engineering - IoT', session:2019-23, Department of Computer Science and Engineering, Apex Institute of Technology, Chandigarh University, Punjab, hereby declare that the work presented in this Project Work entitled 'Federated Learning With IoT Devices' is the outcome of our own bona fide work and is correct to the best of our knowledge and this work has been undertaken taking care of Engineering Ethics. It contains no material previously published or written by another person nor material which has been accepted for the award of any other degree or diploma of the university or other institute of higher learning, except where due acknowledgment has been made in the text.
+
+\vspace{5em}
+\begin{flushright}
+    Rishabh Anand\\
+    19BCS4525
+\end{flushright}
+
+\vspace{13em}
+Date: 08 April, 2022 \\
+
+Place: Ludhiana (Punjab)\\
+
+\newpage
+\addcontentsline{toc}{section}{List of Figures}
+\listoffigures
+
+\newpage
+\addcontentsline{toc}{section}{ABSTRACT}
+\section*{ABSTRACT}
+\onehalfspacing
+\setlength{\parskip}{0em}
+In a world, divided by fear, of losing your loved ones, of losing your loved belongings,of
+losing your life, we hope to come up with a solution that should keep you and your dreams
+safe. Because that's what EarthQuake's take away... Even after the major tremor, what
+hurts more is the AfterShocks that follow. These are produced by the stress that was caused
+by the earthquake.
+
+This project gives us a second chance at saving lives by using Artificial Intelligence
+to determine where the next tremor is going to be. So that you can move, and get to a
+safer place. Methods like Columnb's Stress Criterion are being used in current times to
+explain the spatial distributions of AfterShocks, but as the advent of science \& technology
+is improving, we hope to introduce Machine Learning models that can find an undiscovered
+pattern which will be helpful in predicting the fair locations of AfterShocks.
+
+Once we have our predictions, it is very important to display them in a good manner so
+that Uncle Bob can understand them and move himself to safety. We have created a React
+web-app just for this purpose so that it is easily acessible to people and move them from
+harm's way. Thereby, reducing the damage to both people and resources, thus, making
+this world a better place.
+
+\newpage
+\addcontentsline{toc}{section}{CONTENTS}
+\begin{center}
+    \tableofcontents
+\end{center}
+
+\mainmatter
+
+\setlength{\parskip}{1em}
+
+\newpage
+\section{INTRODUCTION}
+
+\newpage
+\section{THEORY}
+
+
+\newpage
+\section{METHODOLOGY ADOPTED}
+
+\newpage
+\section{CONCLUSIONS}
+
+\newpage
+\addcontentsline{toc}{section}{REFERENCES}
+\section*{REFERENCES}
+
+\end{document}
