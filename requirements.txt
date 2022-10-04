@@ -32,7 +32,7 @@ ipython-genutils==0.2.0
 itsdangerous==1.1.0
 jedi @ file:///D:/bld/jedi_1637175334802/work
 Jinja2==2.11.3
-joblib==1.1.0
+joblib==1.2.0
 jsonschema==4.2.1
 jupyter-client @ file:///home/conda/feedstock_root/build_artifacts/jupyter_client_1637611911738/work
 jupyter-core @ file:///D:/bld/jupyter_core_1636814429283/work
