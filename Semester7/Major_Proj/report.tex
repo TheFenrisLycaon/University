@@ -7,6 +7,7 @@
 \usepackage{newtxtext}
 \usepackage{setspace}
 \usepackage{lipsum}
+\usepackage{multicol}
 \usepackage{titlesec}
 \usepackage{pdfpages}
 \usepackage{indentfirst}
@@ -52,9 +53,8 @@
 
 \vspace{-3em}
 
-\title{Forcasting AfterShock Locations \\
-using \\
-Deep Learning Sciences}
+\title{Educational Chat-Bot\\
+Using Artificial Intelligence}
 \author{}
 \date{}
 
@@ -63,7 +63,6 @@ Deep Learning Sciences}
 \frontmatter
 
 \newgeometry{bottom=2cm,top=2cm,left=1.5cm,right=1.5cm}
-\addcontentsline{toc}{section}{Title}
 \maketitle
 
 \vspace{-7em}
@@ -78,16 +77,17 @@ Deep Learning Sciences}
 
 \vspace{1.5em }
 Under the Supervision of:\\
-Dr. Nikhil Aggarwal \\
+Aanchal Sharma \\
 
 \singlespacing
 
 BACHELOR OF ENGINEERING \\
 IN \\
-COMPUTER SCIENCE and ENGINEERIG
+COMPUTER SCIENCE and ENGINEERING\\
+(Internet of Things)
 
 \vspace{1em}
-\includegraphics[scale=0.25]{private/seal.png}
+\includegraphics[scale=0.3]{private/banner.png}
 
 \singlespacing
 
@@ -95,17 +95,63 @@ APEX INSTITUTE OF TECHNOLOGY\\
 CHANDIGARH UNIVERSITY, GHARUAN\\
 Mohali, Punjab \\
 
+\vspace{2em}
 \onehalfspacing
-May, 2022
+October, 2022
 
 \end{center}
 \restoregeometry
 
 \newpage
-\addcontentsline{toc}{section}{Acknowlgement}
+\begin{center}
+    \includegraphics[scale=0.34]{private/banner.png}
+\end{center}
+\section*{Bonafide Certificate}
+
+Certified that this project report "Educational Chat-Bot Using AI" is the bonafide work of "Rishabh Anand" who carried out the project work under my supervision.
+
+\begin{multicols*}{2}
+\begin{center}
+\vspace*{5em}
+\textbf{SIGNATURE}\\
+\phantom{ }\\
+\emph{Name}\\
+\phantom{ }\\
+HEAD OF THE DEPARTMENT\\
+\phantom{ }\\
+\emph{Department}\\
+\vspace{3em}
+Submitted for the project viva-voce examination held on\\
+\vspace{5em}
+\textbf{INTERNAL EXAMINER}\\
+\vspace{10em}
+\phantom{ }\\
+\vspace{6em}
+\textbf{SIGNATURE}\\
+\phantom{ }\\
+\emph{Aanchal Sharma}\\
+SUPERVISOR\\
+Academic Designation\\
+\phantom{ }\\
+\emph{Department}\\
+\vspace{9em}
+\phantom{}\\
+\textbf{EXTERNAL EXAMINER}\\
+\end{center}
+\end{multicols*}
+
+\newpage
 \section*{Acknowlgement}
 
-We, 'Rishabh Anand', 'Abhishek Singh' and 'Shefali Yadav', students of 'Bachelor of Engineering in Computer Science and Engineering - IoT', session:2019-23, Department of Computer Science and Engineering, Apex Institute of Technology, Chandigarh University, Punjab, hereby declare that the work presented in this Project Work entitled 'Federated Learning With IoT Devices' is the outcome of our own bona fide work and is correct to the best of our knowledge and this work has been undertaken taking care of Engineering Ethics. It contains no material previously published or written by another person nor material which has been accepted for the award of any other degree or diploma of the university or other institute of higher learning, except where due acknowledgment has been made in the text.
+I, 'Rishabh Anand' student of 'Bachelor of Engineering in Computer Science and Engineering - IoT',
+session: 2019-23, Department of Computer Science and Engineering, Apex Institute of Technology, Chandigarh University,Punjab,
+hereby declare that the work presented in this Project Work entitled 'AI Chat-Bot'
+is the outcome of my own bona fide work and is correct to the best of our knowledge
+and this work has been undertaken taking care of Engineering Ethics. \\
+
+It contains no material previously published or written by another person
+nor material which has been accepted for the award of any other degree or diploma of the university or other institute of higher learning,
+except where due acknowledgment has been made in the text.
 
 \vspace{5em}
 \begin{flushright}
@@ -114,9 +160,15 @@ We, 'Rishabh Anand', 'Abhishek Singh' and 'Shefali Yadav', students of 'Bachelor
 \end{flushright}
 
 \vspace{13em}
-Date: 08 April, 2022 \\
+Date: 06th October, 2022 \\
 
 Place: Ludhiana (Punjab)\\
+
+
+\newpage
+\begin{center}
+    \tableofcontents
+\end{center}
 
 \newpage
 \addcontentsline{toc}{section}{List of Figures}
@@ -127,30 +179,14 @@ Place: Ludhiana (Punjab)\\
 \section*{ABSTRACT}
 \onehalfspacing
 \setlength{\parskip}{0em}
-In a world, divided by fear, of losing your loved ones, of losing your loved belongings,of
-losing your life, we hope to come up with a solution that should keep you and your dreams
-safe. Because that's what EarthQuake's take away... Even after the major tremor, what
-hurts more is the AfterShocks that follow. These are produced by the stress that was caused
-by the earthquake.
 
-This project gives us a second chance at saving lives by using Artificial Intelligence
-to determine where the next tremor is going to be. So that you can move, and get to a
-safer place. Methods like Columnb's Stress Criterion are being used in current times to
-explain the spatial distributions of AfterShocks, but as the advent of science \& technology
-is improving, we hope to introduce Machine Learning models that can find an undiscovered
-pattern which will be helpful in predicting the fair locations of AfterShocks.
+In a world, ruled by knowledge and one that runs on information, it becomes crucial for a person to know what is happening around him. But with the abundance of knowledge and information it becomes difficult for a person to keep his own data bank up to date with all the facts flowing around him. \\
 
-Once we have our predictions, it is very important to display them in a good manner so
-that Uncle Bob can understand them and move himself to safety. We have created a React
-web-app just for this purpose so that it is easily acessible to people and move them from
-harm's way. Thereby, reducing the damage to both people and resources, thus, making
-this world a better place.
+This is where my project comes in. Every piece of knowledge, every bit of information just one question away. Not only that, but it also helps you to keep your data bank up to date with the latest information. Sure you could just google stuff and get that required bit of data but google is big and the results are crowded. How do you fiter out the important parts of the information that is relevant to you ? How to you personalize it to the area or to the institution that you are in ? With my project, of course. Not only are the results about "your" institute, but it also comes with the relevance that you didn't know you needed. \\
 
-\newpage
-\addcontentsline{toc}{section}{CONTENTS}
-\begin{center}
-    \tableofcontents
-\end{center}
+The results are summarized, directly from your own instutute's webpages. The results are personalized to your needs. The results come in a conversational manner. It's like talking to the dean of the college but in a far more friendly and fun way. So now you won't have to go to the poorly designed college webpage. All you need to do is talk to this bot, like you would talk to one of your friends and all the information that you need is given to you. Instantly.\\
+
+This project solves the problem of FOMO in an elegant way. Thereby, making the world, or at least your world, a better place.
 
 \mainmatter
 
@@ -159,18 +195,99 @@ this world a better place.
 \newpage
 \section{INTRODUCTION}
 
-\newpage
-\section{THEORY}
+\subsection{Need Identification}
+
+A number of students miss out on important information that is being circulated within an institution if they are not paying attention or miss out on classes.
+
+\subsection{Problem Identification}
+
+Missing out on this information causes a lot of issues for them such as missing:: \\
+\vspace*{-3em}
+\begin{itemize}
+    \item Placement drives
+    \item Events
+    \item Tests
+    \item Submissions
+\end{itemize}
+
+\subsection{Tasks Identification}
+
+The major tasks include ::
+\vspace*{-1.5em}
+\begin{itemize}
+    \item Generating a data-bank using institute's site
+    \item Generating a data-bank using institute's noticeboards
+    \item Regularly updating the data-bank
+    \item Providing a user-friendly way to convey this information to the relevant people.
+    \item Providing a way to personalize the information to the user.
+\end{itemize}
+
+\subsection{Timeline}
+
+\begin{figure}[!htb]
+    \begin{center}
+        \includegraphics[width=\textwidth]{private/Timeline.png}
+    \end{center}
+    \caption{Timeline}
+\end{figure}
+
+\subsection{Organization of Report}
+
+\begin{enumerate}
+    \item Literature Survey :: Includes information about similar previousp projects.
+    \item Design Flow :: Discusses the design decisions taken during the project building.
+    \item Result Analysis :: Discusses the methodology adopted for the project.
+    \item Conclusion :: Discusses the conclusion of the project and its future aspect.
+\end{enumerate}
 
 
 \newpage
-\section{METHODOLOGY ADOPTED}
+\section{LITERATURE SURVEY}
+
+\subsection{Timeline of the reported problem}
+\subsection{Proposed Solutions}
+\subsection{Bibliometric Analysis}
+\subsection{Review Summary}
+\subsection{Problem Definition}
+\subsection{Goals}
+
+\newpage
+\section{DESIGN FLOW}
+
+\subsection{Selection of Features}
+\subsection{Design COnstraints}
+\subsection{Feature Analysis}
+\subsection{Design Flow}
+\subsection{Design Selection}
+\subsection{Implementation Plan}
+
+
+\newpage
+\section{RESULTS ANALYSIS AND VALIDATION}
+
+\subsection{Implementation}
+
+
 
 \newpage
 \section{CONCLUSIONS}
 
+\subsection{Conclusion}
+\subsection{Future Work}
+
+
 \newpage
 \addcontentsline{toc}{section}{REFERENCES}
 \section*{REFERENCES}
+
+
+\newpage
+\addcontentsline{toc}{section}{APPENDIX}
+\section*{APPENDIX}
+
+
+\newpage
+\addcontentsline{toc}{section}{USER MANAUAL}
+\section*{USER MANUAL}
 
 \end{document}
