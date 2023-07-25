@@ -20,7 +20,7 @@ decorator @ file:///home/conda/feedstock_root/build_artifacts/decorator_16313468
 defusedxml==0.7.1
 dill==0.3.4
 entrypoints @ file:///home/conda/feedstock_root/build_artifacts/entrypoints_1605121927639/work/dist/entrypoints-0.3-py2.py3-none-any.whl
-Flask==1.1.4
+Flask==2.2.5
 Flask-SocketIO==4.2.1
 fonttools==4.28.3
 idna==2.8
