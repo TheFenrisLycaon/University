@@ -13,7 +13,7 @@ chardet==3.0.4
 click==7.1.2
 colorama @ file:///home/conda/feedstock_root/build_artifacts/colorama_1602866480661/work
 crc32c==2.2.post0
-cryptography==36.0.0
+cryptography==41.0.3
 cycler==0.11.0
 debugpy @ file:///D:/bld/debugpy_1636043475787/work
 decorator @ file:///home/conda/feedstock_root/build_artifacts/decorator_1631346842025/work
